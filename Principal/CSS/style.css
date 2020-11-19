@@ -1,40 +1,135 @@
-form {
-    margin-left: 730px;
-    margin-top: 100px;
-    width: 400px;
-    padding: 1em;
-    border: 2px solid #CCC;
-    border-radius: 1em;
+body
+{
+    margin: 0 auto;
 }
 
-form div + div {
+form 
+{
+    margin-left: 30%;
+    margin-top: 100px;
+    max-width: 100%;
+    width: 40%;
+    min-width: 350px;
+    padding: 1em;
+    border: 2px solid #CCC;
+    border-radius: 0.75em;
+    box-shadow: 0.0em 0.0em 1em 0.1em #000;
+}
+
+form div + div 
+{
     margin-top: 1em;
 }
 
-label {
+label 
+{
     display: inline-block;
-    width: 90px;
+    width: 22%;
     text-align: right;
 }
 
-input, textarea {
+input, textarea 
+{
     font: 1em sans-serif;
-    width: 300px;
+    width: 70%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
+    border-radius: 0.25em;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus 
+{
     border-color: #000;
 }
 
-textarea {
-
+textarea 
+{
     vertical-align: center;
     height: 5em;
     resize: vertical;
 }
-h1{
+
+h1
+{
     text-align: center;
+}
+
+#firstname
+{
+    width: 30%;
+}
+
+#firstnamelabel
+{
+    margin-left: -14%;
+}
+
+#lastname
+{
+    width: 36%;
+}
+
+#lastnamelabel
+{
+    margin-left: -1%
+}
+
+#dateofbirth
+{
+    width: 25%;
+}
+
+#dateofbirthlabel
+{
+    margin-left: -1%;
+    margin-top: 1em;
+}
+
+#email
+{
+    width: 40%;
+}
+
+#emaillabel
+{
+    margin-left: -13%;
+}
+
+#password
+{
+    margin-top: 1em;
+    width: 26%;
+}
+
+#passwordlabel
+{
+    margin-left: -14%;
+}
+
+#passwordconfirm
+{
+    width: 26%;
+}
+
+#passwordconfirmlabel
+{
+    margin-left: 13.25%;
+}
+
+#address
+{
+    margin-top: 1em;
+    width: 85.5%;
+}
+
+#addresslabel
+{
+    margin-left: -11%;
+}
+
+#submitbutton
+{
+    margin-top: 2em;
+    margin-left: 75%;
 }
