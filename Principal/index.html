@@ -19,7 +19,7 @@
         <img src="Images/Logo.png" id="logo" alt="some text" width=150 height=150>
         <h1>CADASTRE-SE</h1>
         <form action="successful.html" method="post">
-
+            <h2>DADOS PESSOAIS</h2>
             <label for="firstname" id="firstnamelabel">Nome:</label>
                 <input type="text" id="firstname" />
 
@@ -38,10 +38,21 @@
             <label for="passwordconfirm" id="passwordconfirmlabel">Confirmação de senha:</label>
                 <input type="password" id="passwordconfirm" name="pwd" >
 
-            <label for="address" id="addresslabel">Endereço:</label>
-                <input type="text" id="address" placeholder="Rua são João, 456"/>
-            <br>
-            <button type="submit" id="submitbutton">Cadastrar</button>
+            <h2>ENDEREÇO</h2>
+
+            <label for="street" id="streetlabel">Rua: </label>
+                <input type="text" id="street" name="pwd" >
+
+            <label for="housenumber" id="housenumberlabel">Número: </label>
+                <input type="text" id="housenumber" name="pwd" >
+
+            <label for="district" id="districtlabel">Bairro: </label>
+                <input type="text" id="district" name="pwd" >
+
+            <label for="city" id="citylabel">Cidade: </label>
+                <input type="text" id="city" name="pwd" >
+
+            <button type="submit" id="submitbutton">CADASTRAR</button>
 
         </form>
 
