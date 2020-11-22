@@ -2,6 +2,7 @@
 {
     font-family: Goldman;
     src: url('../Fonts/Goldman-Bold.ttf');
+    font-display: fallback;
 }
 
 body
