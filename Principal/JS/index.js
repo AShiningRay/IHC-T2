@@ -62,7 +62,7 @@ function checkEmail()
     let emailcheck = document.getElementById("email").value.split("@");
     emailcheck[1] = "@" + emailcheck[1];
     
-    if(emailcheck[0].length > 0 && emailcheck[1] === "@gmail.com" || emailcheck[1] === "@hotmail.com" || emailcheck[1] === "@outlook.com" || emailcheck[1] === "@live.com") // Stub, to be iterated over
+    if(emailcheck[0].length > 0 && (emailcheck[1] === "@gmail.com" || emailcheck[1] === "@hotmail.com" || emailcheck[1] === "@outlook.com" || emailcheck[1] === "@live.com" || emailcheck[1] === "@yahoo.com" || emailcheck[1] === "@aol.com" || emailcheck[1] === "@icloud.com" || emailcheck[1] === "@yandex.com")) // Stub, to be iterated over
         {
             document.getElementById("email").style.borderColor = "#0F0";
         }
