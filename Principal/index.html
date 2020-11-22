@@ -12,13 +12,14 @@
         <title>Geek Burguer</title>
 
         <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/index.js"></script>
 
     </head>
 
     <body>
         <img src="Images/Logo.png" id="logo" alt="some text" width=150 height=150>
         <h1>CADASTRE-SE</h1>
-        <form action="successful.html" method="post">
+        <form>
             <h2>DADOS PESSOAIS</h2>
             <label for="firstname" id="firstnamelabel">Nome:</label>
                 <input type="text" id="firstname" />
@@ -33,10 +34,10 @@
                 <input type="email" id="email" placeholder="Digite seu endereço de email"/>
 
             <label for="password" id="passwordlabel">Senha:</label>
-                <input type="password" id="password" name="pwd">
+                <input type="password" id="password" name="password">
 
             <label for="passwordconfirm" id="passwordconfirmlabel">Confirmação de senha:</label>
-                <input type="password" id="passwordconfirm" name="pwd" >
+                <input type="password" id="passwordconfirm" name="passwordconfirm" >
 
             <h2>ENDEREÇO</h2>
 
@@ -52,7 +53,7 @@
             <label for="city" id="citylabel">Cidade: </label>
                 <input type="text" id="city" name="pwd" >
 
-            <button type="submit" id="submitbutton">CADASTRAR</button>
+            <button type="button" id="submitbutton" onclick="checkFields()">CADASTRAR</button>
 
         </form>
 

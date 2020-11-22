@@ -1,3 +1,10 @@
+
+@font-face 
+{
+    font-family: Goldman;
+    src: url('../Fonts/Goldman-Bold.ttf');
+}
+
 body
 {
     margin: 0 auto;
@@ -172,39 +179,35 @@ h1
     margin-left: -13%;
 }
 
-
-
 #submitbutton
 {
     margin-top: 2em;
     margin-left: 75%;
     font-size: 18px;
     font-family: Goldman, sans-serif;
-
 }
+
 #logo
 {
     margin-top: 1%;
     margin-left: 46%;
 }
+
 h1
 {
     alignment: center;
     font: 30px Goldman;
 }
+
 h2
 {
     font: 30px Goldman;
 
 }
+
 h3
 {
     font: 100px Goldman;
     margin-top: 10%;
     text-align: center
-}
-
-@font-face {
-    font-family: Goldman;
-    src: url('../Fonts/Goldman-Bold.ttf');
 }
