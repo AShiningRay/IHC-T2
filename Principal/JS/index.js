@@ -59,14 +59,17 @@ function checkDate()
 
 function checkEmail()
 {
-    if(document.getElementById("email").value !== "lal@gmail.com") // Stub, to be iterated over
+    let emailcheck = document.getElementById("email").value.split("@");
+    emailcheck[1] = "@" + emailcheck[1];
+    
+    if(emailcheck[0].length > 0 && emailcheck[1] === "@gmail.com" || emailcheck[1] === "@hotmail.com" || emailcheck[1] === "@outlook.com" || emailcheck[1] === "@live.com") // Stub, to be iterated over
         {
-            document.getElementById("email").style.borderColor = "#F00";
+            document.getElementById("email").style.borderColor = "#0F0";
         }
     
     else
         {
-            document.getElementById("email").style.borderColor = "#0F0";
+            document.getElementById("email").style.borderColor = "#F00";
         }
 }
 
