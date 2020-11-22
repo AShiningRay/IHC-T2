@@ -43,8 +43,6 @@ function checkTextField(fieldname)
         {
             document.getElementById(fieldname).style.borderColor = "#0F0";
         }
-    
-    alert(fieldname + " : " + document.getElementById(fieldname).value)
 }
 
 function checkDate()
