@@ -1,4 +1,10 @@
-function checkFields() 
+window.onload = function ()
+{
+    document.getElementById("texterrorname").style.display = "none";
+    document.getElementById("texterrorlastname").style.display = "none";
+}
+
+function checkFields()
 {
     
     if(document.getElementById("firstname").textContent === "")

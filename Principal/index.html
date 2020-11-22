@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        
+        <link rel="shorcut icon" href="Images/Icon.png" id="icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="authors" content="Paulo Sousa & Matheus Rondon">
         <meta name="description" content="IHC - Geek Burguer">
@@ -16,19 +16,27 @@
         <link rel="stylesheet" href="CSS/style.css">
         <script defer src="JS/index.js"></script>
 
+
     </head>
 
     <body>
+    checkFields()
         <img src="Images/Logo.png" id="logo" alt="Geek Burguer" width=140 height=150>
         
         <div id="placeholderwebsite">
         
         </div>
-        
+
         <div id="registerform">
             <h1>CADASTRE-SE</h1>
             <form>
+
                 <h2>DADOS PESSOAIS</h2>
+
+                <div class="text">
+                    <b id="texterrorname"> O nome deve conter 2 ou mais caracteres</b> <b id="texterrorlastname"> O sobrenome deve conter 2 ou mais caracteres</b>
+                </div>
+
                 <label for="firstname" id="firstnamelabel">Nome:</label>
                     <input type="text" id="firstname" placeholder="Ex: Joaquim Barbosa" onkeyup="checkTextField('firstname')"/>
 

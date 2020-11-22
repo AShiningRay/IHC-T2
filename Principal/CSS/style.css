@@ -93,7 +93,7 @@ h1
 {
     pointer-events: none;
     margin-left: -1%;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 #email
@@ -109,7 +109,7 @@ h1
 
 #password
 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 26%;
 }
 
@@ -132,7 +132,7 @@ h1
 
 #street
 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 60%;
 }
 
@@ -144,7 +144,7 @@ h1
 
 #housenumber
 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 18%;
 }
 
@@ -156,7 +156,7 @@ h1
 
 #district
 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 40%;
 }
 
@@ -168,7 +168,7 @@ h1
 
 #city
 {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 38%;
 }
 
@@ -210,4 +210,19 @@ h3
     font: 100px Goldman;
     margin-top: 10%;
     text-align: center
+}
+
+#texterrorname
+{
+    font: 10px Arial Black;
+    margin-left: 7%;
+    color: red;
+    display:inline-block
+}
+
+#texterrorlastname
+{
+    font: 10px Arial Black;
+    margin-left: 60%;
+    color: red;
 }
