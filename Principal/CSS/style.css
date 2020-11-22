@@ -93,7 +93,6 @@ h1
 {
     pointer-events: none;
     margin-left: -1%;
-    margin-top: 2em;
 }
 
 #email
@@ -109,7 +108,6 @@ h1
 
 #password
 {
-    margin-top: 2em;
     width: 26%;
 }
 
@@ -132,7 +130,6 @@ h1
 
 #street
 {
-    margin-top: 2em;
     width: 60%;
 }
 
@@ -144,7 +141,7 @@ h1
 
 #housenumber
 {
-    margin-top: 2em;
+
     width: 18%;
 }
 
@@ -156,7 +153,6 @@ h1
 
 #district
 {
-    margin-top: 2em;
     width: 40%;
 }
 
@@ -168,7 +164,6 @@ h1
 
 #city
 {
-    margin-top: 2em;
     width: 38%;
 }
 
@@ -212,17 +207,85 @@ h3
     text-align: center
 }
 
-#texterrorname
+#name_and_last_name
 {
     font: 10px Arial Black;
-    margin-left: 7%;
     color: red;
-    display:inline-block
 }
 
-#texterrorlastname
+#text_error_name
 {
+    margin-left: 7%;
+}
+
+#text_error_last_name
+{
+    margin-left: 20%;
+}
+
+#date_and_email
+{
+    margin-top: 2em;
     font: 10px Arial Black;
-    margin-left: 60%;
     color: red;
+}
+
+#date_error
+{
+    margin-left: 25%;
+}
+
+#email_error
+{
+    margin-left: 20%;
+}
+
+#passwords{
+    margin-top: 2em;
+    font: 10px Arial Black;
+    color: red;
+}
+
+#password_error
+{
+    margin-left: 6%;
+}
+
+#password_confirm_error
+{
+    margin-left: 35%;
+}
+
+#street_and_number_error
+{
+    margin-top: 2em;
+    font: 10px Arial Black;
+    color: red;
+}
+
+#street_error
+{
+    margin-left: 8%;
+}
+
+#house_number_error
+{
+    margin-left: 31%;
+}
+
+#distric_and_city
+{
+    margin-top: 2em;
+    font: 10px Arial Black;
+    color: red;
+}
+
+#district_error
+{
+    margin-left: 10%;
+}
+
+#city_error
+{
+    margin-left: 25%;
 }

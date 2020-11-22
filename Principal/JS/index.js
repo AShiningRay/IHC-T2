@@ -1,7 +1,16 @@
 window.onload = function ()
 {
-    document.getElementById("texterrorname").style.display = "none";
-    document.getElementById("texterrorlastname").style.display = "none";
+    document.getElementById("text_error_name").style.display = "none";
+    document.getElementById("text_error_last_name").style.display = "none";
+    document.getElementById("date_error").style.display = "none";
+    document.getElementById("email_error").style.display = "none";
+    document.getElementById("password_error").style.display = "none";
+    document.getElementById("password_confirm_error").style.display = "none";
+    document.getElementById("street_error").style.display = "none";
+    document.getElementById("house_number_error").style.display = "none";
+    document.getElementById("district_error").style.display = "none";
+    document.getElementById("city_error").style.display = "none";
+
 }
 
 function checkFields()

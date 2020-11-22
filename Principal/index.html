@@ -33,8 +33,9 @@
 
                 <h2>DADOS PESSOAIS</h2>
 
-                <div class="text">
-                    <b id="texterrorname"> O nome deve conter 2 ou mais caracteres</b> <b id="texterrorlastname"> O sobrenome deve conter 2 ou mais caracteres</b>
+                <div id="name_and_last_name" class="text">
+                    <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
+                    <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
                 </div>
 
                 <label for="firstname" id="firstnamelabel">Nome:</label>
@@ -43,11 +44,21 @@
                 <label for="lastname" id="lastnamelabel">Sobrenome:</label>
                     <input type="text" id="lastname" placeholder="Ex: Soares Neto de Paula" onkeyup="checkTextField('lastname')"/>
 
+                <div id="date_and_email" class="text">
+                    <b id="date_error">A data deve ser válida</b>
+                    <b id="email_error">O email deve ser válido</b>
+                </div>
+
                 <label for="dateofbirth" id="dateofbirthlabel">Data de Nascimento:</label>
                     <input type="date" name="dateofbirth" id="dateofbirth" onchange="checkDate()">
 
                 <label for="email" id="emaillabel">E-mail:</label>
                     <input type="email" id="email" placeholder="Ex: pedreiras01@caraar.com" onkeyup="checkEmail()"/>
+
+                <div id="passwords" class="text">
+                    <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
+                    <b id="password_confirm_error">As senhas devem ser iguais</b>
+                </div>
 
                 <label for="password" id="passwordlabel">Senha:</label>
                     <input type="password" id="password" name="password" onkeyup="checkPassword()">
@@ -57,11 +68,21 @@
 
                 <h2>ENDEREÇO</h2>
 
+                <div id="street_and_number_error" class="text">
+                    <b id="street_error">O nome da rua deve conter mais de 2 caracteres</b>
+                    <b id="house_number_error">O número deve ser válido</b>
+                </div>
+
                 <label for="street" id="streetlabel">Rua: </label>
                     <input type="text" id="street" name="street" placeholder="Ex: Emerson de Izin" onkeyup="checkTextField('street')">
 
                 <label for="housenumber" id="housenumberlabel">Número: </label>
                     <input type="number" id="housenumber" name="housenumber" placeholder="Ex: 69" onchange="checkNumber()">
+
+                <div id="distric_and_city" class="text">
+                    <b id="district_error">O nome do bairro deve ser válido</b>
+                    <b id="city_error">O nome da cidade deve ser válido</b>
+                </div>
 
                 <label for="district" id="districtlabel">Bairro: </label>
                     <input type="text" id="district" name="district" placeholder="Ex: Castelo Branco" onkeyup="checkTextField('district')">
