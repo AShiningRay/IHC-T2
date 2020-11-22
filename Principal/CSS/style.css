@@ -36,10 +36,11 @@ label
 
 input
 {
+    transition-duration: 1s;
     font: 1em sans-serif;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 0.15em solid #999;
     border-radius: 0.25em;
 }
 
