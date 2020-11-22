@@ -1,15 +1,55 @@
-window.onload = function ()
+function errorFields(fieldname)
 {
-    document.getElementById("text_error_name").style.display = "none";
-    document.getElementById("text_error_last_name").style.display = "none";
-    document.getElementById("date_error").style.display = "none";
-    document.getElementById("email_error").style.display = "none";
-    document.getElementById("password_error").style.display = "none";
-    document.getElementById("password_confirm_error").style.display = "none";
-    document.getElementById("street_error").style.display = "none";
-    document.getElementById("house_number_error").style.display = "none";
-    document.getElementById("district_error").style.display = "none";
-    document.getElementById("city_error").style.display = "none";
+    if(fieldname === "firstname")
+    {
+        document.getElementById("text_error_name").style.display = "block";
+    }
+
+    if(fieldname === "lastname")
+    {
+        document.getElementById("text_error_last_name").style.display = "block";
+    }
+
+    if(fieldname === "street")
+    {
+        document.getElementById("street_error").style.display = "block";
+    }
+
+    if(fieldname === "housenumber")
+    {
+        document.getElementById("house_number_error").style.display = "block";
+    }
+
+    if(fieldname === "district")
+    {
+        document.getElementById("district_error").style.display = "block";
+    }
+
+    if(fieldname === "city")
+    {
+        document.getElementById("city_error").style.display = "block";
+    }
+
+    if(fieldname === "dateofbirth")
+    {
+        document.getElementById("date_error").style.display = "block";
+    }
+
+    if(fieldname === "email")
+    {
+        document.getElementById("email_error").style.display = "block";
+    }
+
+    if(fieldname === "password")
+    {
+        document.getElementById("password_error").style.display = "block";
+    }
+
+    if(fieldname === "passwordconfirm")
+    {
+        document.getElementById("password_confirm_error").style.display = "block";
+    }
+
 
 }
 
@@ -52,6 +92,7 @@ function checkTextField(fieldname)
     if(document.getElementById(fieldname).value.length < 2)
         {
             document.getElementById(fieldname).style.borderColor = "#F00";
+            errorFields(fieldname);
         }
     else
         {
@@ -64,6 +105,7 @@ function checkDate()
     if(document.getElementById("dateofbirth").value >= "2005-01-01" || document.getElementById("dateofbirth").value <= "1910-01-01")
         {
            document.getElementById("dateofbirth").style.borderColor = "#F00";
+            errorFields("dateofbirth");
         }
     else
         {
@@ -84,6 +126,7 @@ function checkEmail()
     else
         {
             document.getElementById("email").style.borderColor = "#F00";
+            errorFields("email");
         }
 }
 
@@ -94,6 +137,7 @@ function checkPassword()
         {
             document.getElementById("password").style.borderColor = "#F00";
             //document.getElementById("password").textContent = "Senha curta!";
+            errorFields("password");
         }
     
     else if(document.getElementById("password").value.length >= 8 && document.getElementById("password").value.length < 14)
@@ -113,6 +157,7 @@ function comparePasswords()
         {
             document.getElementById("passwordconfirm").style.borderColor = "#F00";
             //document.getElementById("passwordconfirm").textContent = "senhas não batem!";
+            errorFields("passwordconfirm");
         }
     
     else
@@ -126,5 +171,7 @@ function checkNumber()
     if(document.getElementById("housenumber").value <= 0)
         {
             document.getElementById("housenumber").value = 1;
+            errorFields("housenumber");
+
         }
 }

@@ -178,7 +178,6 @@ h1
     margin-top: 2em;
     margin-left: 75%;
     font-size: 18px;
-    border: 0.1em, 0.1em, #000;
     font-family: Goldman, sans-serif;
 }
 
@@ -215,12 +214,14 @@ h3
 
 #text_error_name
 {
+    display:none;
     margin-left: 7%;
 }
 
 #text_error_last_name
 {
-    margin-left: 20%;
+    display:none;
+    margin-left: 60%;
 }
 
 #date_and_email
@@ -232,11 +233,13 @@ h3
 
 #date_error
 {
+    display:none;
     margin-left: 25%;
 }
 
 #email_error
 {
+    display:none;
     margin-left: 20%;
 }
 
@@ -244,15 +247,18 @@ h3
     margin-top: 2em;
     font: 10px Arial Black;
     color: red;
+
 }
 
 #password_error
 {
+    display:none;
     margin-left: 6%;
 }
 
 #password_confirm_error
 {
+    display:none;
     margin-left: 35%;
 }
 
@@ -265,11 +271,13 @@ h3
 
 #street_error
 {
+    display:none;
     margin-left: 8%;
 }
 
 #house_number_error
 {
+    display:none;
     margin-left: 31%;
 }
 
@@ -282,10 +290,12 @@ h3
 
 #district_error
 {
+    display:none;
     margin-left: 10%;
 }
 
 #city_error
 {
+    display:none;
     margin-left: 25%;
 }
