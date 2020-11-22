@@ -1,7 +1,6 @@
 function checkFields() 
 {
     
-    
     if(document.getElementById("firstname").textContent === "")
         {
             document.getElementById("firstname").style.borderColor = "#F00";
@@ -35,7 +34,7 @@ function checkFields()
 
 function checkTextField(fieldname)
 {
-    if(document.getElementById(fieldname).value !== "emerson")
+    if(document.getElementById(fieldname).value.length < 2)
         {
             document.getElementById(fieldname).style.borderColor = "#F00";
         }
