@@ -25,33 +25,33 @@
                 <input type="text" id="firstname" placeholder="Ex: Joaquim Barbosa" onkeyup="checkTextField('firstname')"/>
 
             <label for="lastname" id="lastnamelabel">Sobrenome:</label>
-                <input type="text" id="lastname" placeholder="Ex: Soares Neto de Paula" onkeypress="checkTextField('lastname')"/>
+                <input type="text" id="lastname" placeholder="Ex: Soares Neto de Paula" onkeyup="checkTextField('lastname')"/>
 
             <label for="dateofbirth" id="dateofbirthlabel">Data de Nascimento:</label>
                 <input type="date" name="dateofbirth" id="dateofbirth" onchange="checkDate()">
 
             <label for="email" id="emaillabel">E-mail:</label>
-                <input type="email" id="email" placeholder="Ex: pedreiras01@caraar.com" onkeypress="checkEmail()"/>
+                <input type="email" id="email" placeholder="Ex: pedreiras01@caraar.com" onkeyup="checkEmail()"/>
 
             <label for="password" id="passwordlabel">Senha:</label>
-                <input type="password" id="password" name="password" onkeypress="checkPassword()">
+                <input type="password" id="password" name="password" onkeyup="checkPassword()">
 
             <label for="passwordconfirm" id="passwordconfirmlabel">Confirmação de senha:</label>
-                <input type="password" id="passwordconfirm" name="passwordconfirm" onkeypress="comparePasswords()">
+                <input type="password" id="passwordconfirm" name="passwordconfirm" onkeyup="comparePasswords()">
 
             <h2>ENDEREÇO</h2>
 
             <label for="street" id="streetlabel">Rua: </label>
-                <input type="text" id="street" name="street" placeholder="Ex: Emerson de Izin" onkeypress="checkTextField('street')">
+                <input type="text" id="street" name="street" placeholder="Ex: Emerson de Izin" onkeyup="checkTextField('street')">
 
             <label for="housenumber" id="housenumberlabel">Número: </label>
-                <input type="number" id="housenumber" name="housenumber" placeholder="Ex: 69" onkeypress="checkNumber()">
+                <input type="number" id="housenumber" name="housenumber" placeholder="Ex: 69" onchange="checkNumber()">
 
             <label for="district" id="districtlabel">Bairro: </label>
-                <input type="text" id="district" name="district" placeholder="Ex: Castelo Branco" onkeypress="checkTextField('district')">
+                <input type="text" id="district" name="district" placeholder="Ex: Castelo Branco" onkeyup="checkTextField('district')">
 
             <label for="city" id="citylabel">Cidade: </label>
-                <input type="text" id="city" name="city" placeholder="Ex: Catalão" onkeypress="checkTextField('city')">
+                <input type="text" id="city" name="city" placeholder="Ex: Catalão" onkeyup="checkTextField('city')">
 
             <button type="button" id="submitbutton" onclick="checkFields()">CADASTRAR</button>
 
