@@ -76,7 +76,6 @@ function errorFields_show(fieldname)
     if(fieldname === "lastname")
     {
 
-        document.getElementById("text_error_last_name").style.marginLeft = "58%";
         
         document.getElementById("text_error_last_name").style.display = "inline-block";
     }
