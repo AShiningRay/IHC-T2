@@ -75,13 +75,13 @@ h1
 
 #lastname
 {
-    width: 36%;
+    width: 40%;
 }
 
 #lastnamelabel
 {
     pointer-events: none;
-    margin-left: -1%
+    margin-left: -5%
 }
 
 #dateofbirth
@@ -221,7 +221,7 @@ h3
 #text_error_last_name
 {
     display:none;
-    margin-left: 60%;
+    margin-left: 58%;
 }
 
 #date_and_email
@@ -240,7 +240,7 @@ h3
 #email_error
 {
     display:none;
-    margin-left: 20%;
+    margin-left: 70%;
 }
 
 #passwords{
@@ -259,7 +259,7 @@ h3
 #password_confirm_error
 {
     display:none;
-    margin-left: 35%;
+    margin-left: 72%;
 }
 
 #street_and_number_error
@@ -278,7 +278,7 @@ h3
 #house_number_error
 {
     display:none;
-    margin-left: 31%;
+    margin-left: 82%;
 }
 
 #distric_and_city
@@ -291,11 +291,11 @@ h3
 #district_error
 {
     display:none;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 #city_error
 {
     display:none;
-    margin-left: 25%;
+    margin-left: 68%;
 }

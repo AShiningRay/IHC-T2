@@ -2,16 +2,20 @@ function errorFields_hide(fieldname)
 {
     if(fieldname === "firstname")
     {
+        document.getElementById("text_error_last_name").style.marginLeft = "58%";
+
         document.getElementById("text_error_name").style.display = "none";
     }
 
     if(fieldname === "lastname")
-    {
+    {   
         document.getElementById("text_error_last_name").style.display = "none";
     }
 
     if(fieldname === "street")
     {
+        document.getElementById("house_number_error").style.marginLeft = "82%";
+
         document.getElementById("street_error").style.display = "none";
     }
 
@@ -22,9 +26,12 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "district")
     {
+
+        document.getElementById("city_error").style.marginLeft = "68%";
+         
         document.getElementById("district_error").style.display = "none";
     }
-
+ 
     if(fieldname === "city")
     {
         document.getElementById("city_error").style.display = "none";
@@ -32,6 +39,9 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "dateofbirth")
     {
+
+        document.getElementById("email_error").style.marginLeft = "70%";
+        
         document.getElementById("date_error").style.display = "none";
     }
 
@@ -42,6 +52,8 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "password")
     {
+        document.getElementById("password_confirm_error").style.marginLeft = "72%";
+
         document.getElementById("password_error").style.display = "none";
     }
 
@@ -51,57 +63,71 @@ function errorFields_hide(fieldname)
     }
 
 }
-
+ 
 function errorFields_show(fieldname)
 {
     if(fieldname === "firstname")
     {
-        document.getElementById("text_error_name").style.display = "block";
+        document.getElementById("text_error_last_name").style.marginLeft = "18%";
+        
+        document.getElementById("text_error_name").style.display = "inline-block";
     }
 
     if(fieldname === "lastname")
     {
-        document.getElementById("text_error_last_name").style.display = "block";
+
+        document.getElementById("text_error_last_name").style.marginLeft = "58%";
+        
+        document.getElementById("text_error_last_name").style.display = "inline-block";
     }
 
     if(fieldname === "street")
     {
-        document.getElementById("street_error").style.display = "block";
+        document.getElementById("house_number_error").style.marginLeft = "35.5%";
+        
+        document.getElementById("street_error").style.display = "inline-block";
     }
 
     if(fieldname === "housenumber")
     {
-        document.getElementById("house_number_error").style.display = "block";
+        document.getElementById("house_number_error").style.display = "inline-block";
     }
 
     if(fieldname === "district")
     {
-        document.getElementById("district_error").style.display = "block";
+        document.getElementById("city_error").style.marginLeft = "22%";
+        
+        document.getElementById("district_error").style.display = "inline-block";
     }
 
     if(fieldname === "city")
     {
-        document.getElementById("city_error").style.display = "block";
+        document.getElementById("city_error").style.display = "inline-block";
     }
 
     if(fieldname === "dateofbirth")
     {
-        document.getElementById("date_error").style.display = "block";
+        document.getElementById("email_error").style.marginLeft = "20%";
+        
+        document.getElementById("date_error").style.display = "inline-block";
     }
 
     if(fieldname === "email")
     {
-        document.getElementById("email_error").style.display = "block";
+        document.getElementById("email_error").style.display = "inline-block";
     }
 
-    if(fieldname === "password")
+    if(fieldname === "password") //35%
     {
-        document.getElementById("password_error").style.display = "block";
+        
+        document.getElementById("password_confirm_error").style.marginLeft = "35%";
+
+        document.getElementById("password_error").style.display = "inline-block";
     }
 
     if(fieldname === "passwordconfirm")
     {
-        document.getElementById("password_confirm_error").style.display = "block";
+        document.getElementById("password_confirm_error").style.display = "inline-block";
     }
 
 }
