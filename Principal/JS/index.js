@@ -75,8 +75,6 @@ function errorFields_show(fieldname)
 
     if(fieldname === "lastname")
     {
-
-        
         document.getElementById("text_error_last_name").style.display = "inline-block";
     }
 
@@ -138,12 +136,17 @@ function checkFields()
         {
             document.getElementById("firstname").style.borderColor = "#F00";
             check = false
+
+            document.getElementById("text_error_last_name").style.marginLeft = "18%";
+
+            document.getElementById("text_error_name").style.display = "inline-block";
         }
     
     if(document.getElementById("lastname").value.length < 2)
         {
             document.getElementById("lastname").style.borderColor = "#F00";
             check = false
+            document.getElementById("text_error_last_name").style.display = "inline-block";
         }
 
 
@@ -151,31 +154,45 @@ function checkFields()
         {
             document.getElementById("street").style.borderColor = "#F00";
             check = false
+
+            document.getElementById("house_number_error").style.marginLeft = "35.5%";
+
+            document.getElementById("street_error").style.display = "inline-block";
         }
     
     if(document.getElementById("district").value.length < 2)
         {
             document.getElementById("district").style.borderColor = "#F00";
             check = false
+
+            document.getElementById("city_error").style.marginLeft = "22%";
+
+            document.getElementById("district_error").style.display = "inline-block";
         }
     
     if(document.getElementById("city").value.length < 2)
         {
             document.getElementById("city").style.borderColor = "#F00";
             check = false
+
+            document.getElementById("city_error").style.display = "inline-block";
         }
 
     if(document.getElementById("password").value.length < 8)
     {
         document.getElementById("password").style.borderColor = "#F00";
         check = false
+
+        document.getElementById("password_confirm_error").style.marginLeft = "35%";
+
+        document.getElementById("password_error").style.display = "inline-block";
     }
 
+    if (comparePasswords() === 0)
+        check = false
     if (checkPassword() === 0)
         check = false
     if (checkNumber() === 0)
-        check = false
-    if (comparePasswords() === 0)
         check = false
     if (checkEmail() === 0)
         check = false
@@ -241,6 +258,9 @@ function checkEmail()
 
 function checkPassword()
 {
+    if (document.getElementById("passwordconfirm").value === "")
+        document.getElementById("passwordconfirm").style.borderColor = "#F00";
+
     if(document.getElementById("password").value.length < 8)
         {
             document.getElementById("password").style.borderColor = "#F00";
@@ -261,7 +281,8 @@ function checkPassword()
             document.getElementById("password").style.borderColor = "#0F0";
             errorFields_hide("password");
             return 1;
-        }   
+        }
+
 }
 
 function comparePasswords()
@@ -284,7 +305,7 @@ function comparePasswords()
 
 function checkNumber()
 {
-    if(parseFloat(document.getElementById("housenumber").value) < 1 )
+    if(parseFloat(document.getElementById("housenumber").value) < 1 || document.getElementById("housenumber").value === "")
         {
             document.getElementById("housenumber").style.borderColor = "#F00";
             errorFields_show("housenumber");
