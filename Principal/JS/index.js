@@ -133,36 +133,59 @@ function errorFields_show(fieldname)
 
 function checkFields()
 {
-    
-    if(document.getElementById("firstname").textContent === "")
+    let check = true;
+    if(document.getElementById("firstname").value.length < 2)
         {
             document.getElementById("firstname").style.borderColor = "#F00";
+            check = false
         }
     
-    if(document.getElementById("lastname").textContent === "")
+    if(document.getElementById("lastname").value.length < 2)
         {
             document.getElementById("lastname").style.borderColor = "#F00";
+            check = false
         }
-    
-    if(document.getElementById("street").textContent === "")
+
+
+    if(document.getElementById("street").value.length < 2)
         {
             document.getElementById("street").style.borderColor = "#F00";
+            check = false
         }
     
-    if(document.getElementById("housenumber").value === "")
-        {
-            document.getElementById("housenumber").style.borderColor = "#F00";
-        }
-    
-    if(document.getElementById("district").textContent === "") 
+    if(document.getElementById("district").value.length < 2)
         {
             document.getElementById("district").style.borderColor = "#F00";
+            check = false
         }
     
-    if(document.getElementById("city").textContent === "")
+    if(document.getElementById("city").value.length < 2)
         {
             document.getElementById("city").style.borderColor = "#F00";
+            check = false
         }
+
+    if(document.getElementById("password").value.length < 8)
+    {
+        document.getElementById("password").style.borderColor = "#F00";
+        check = false
+    }
+
+    if (checkPassword() === 0)
+        check = false
+    if (checkNumber() === 0)
+        check = false
+    if (comparePasswords() === 0)
+        check = false
+    if (checkEmail() === 0)
+        check = false
+    if (checkDate() === 0)
+        check = false
+
+
+    if (check === true)
+        window.location.href = "./successful.html"; //redirecionando pra essa página ppenas para realizar o teste pra ver se todos os campos estão sendo verificados corretamente.
+
 }
 
 function checkTextField(fieldname)
@@ -185,11 +208,13 @@ function checkDate()
         {
            document.getElementById("dateofbirth").style.borderColor = "#F00";
             errorFields_show("dateofbirth");
+            return 0;
         }
     else
         {
             document.getElementById("dateofbirth").style.borderColor = "#0F0";
             errorFields_hide("dateofbirth");
+            return 1;
         }
 }
 
@@ -202,12 +227,14 @@ function checkEmail()
         {
             document.getElementById("email").style.borderColor = "#0F0";
             errorFields_hide("email");
+            return 1;
         }
     
     else
         {
             document.getElementById("email").style.borderColor = "#F00";
             errorFields_show("email");
+            return 0;
         }
 }
 
@@ -219,18 +246,21 @@ function checkPassword()
             document.getElementById("password").style.borderColor = "#F00";
             //document.getElementById("password").textContent = "Senha curta!";
             errorFields_show("password");
+            return 0;
         }
     
     else if(document.getElementById("password").value.length >= 8 && document.getElementById("password").value.length < 14)
         {
             document.getElementById("password").style.borderColor = "#FF0";
             errorFields_hide("password");
+            return 1;
         }
     
     else if(document.getElementById("password").value.length >= 14)
         {
             document.getElementById("password").style.borderColor = "#0F0";
             errorFields_hide("password");
+            return 1;
         }   
 }
 
@@ -241,27 +271,39 @@ function comparePasswords()
             document.getElementById("passwordconfirm").style.borderColor = "#F00";
             //document.getElementById("passwordconfirm").textContent = "senhas não batem!";
             errorFields_show("passwordconfirm");
+            return 0;
         }
     
     else
         {
         document.getElementById("passwordconfirm").style.borderColor = "#0F0";
             errorFields_hide("passwordconfirm");
+            return 1;
         }
 }
 
 function checkNumber()
 {
-    if(document.getElementById("housenumber").value <= 0)
+    if(parseFloat(document.getElementById("housenumber").value) < 1 )
         {
             document.getElementById("housenumber").style.borderColor = "#F00";
             errorFields_show("housenumber");
-
+            return 0;
         }
-    else if(document.getElementById("housenumber").value >= 0)
+    else if(parseFloat(document.getElementById("housenumber").value) >=1 && Number.isInteger(parseFloat(document.getElementById("housenumber").value)) === true)
     {
         document.getElementById("housenumber").style.borderColor = "#0F0";
         errorFields_hide("housenumber");
+        return 1;
 
     }
+
+    else if(parseFloat(document.getElementById("housenumber").value) >=1 && Number.isInteger(parseFloat(document.getElementById("housenumber").value)) === false)
+    {
+        document.getElementById("housenumber").style.borderColor = "#F00";
+        errorFields_show("housenumber");
+        return 0;
+    }
+
+
 }
