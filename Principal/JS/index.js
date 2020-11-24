@@ -2,7 +2,7 @@ function errorFields_hide(fieldname)
 {
     if(fieldname === "firstname")
     {
-        document.getElementById("text_error_last_name").style.marginLeft = "58%";
+        document.getElementById("text_error_last_name").style.marginLeft = "53%";
 
         document.getElementById("text_error_name").style.display = "none";
     }
@@ -14,7 +14,7 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "street")
     {
-        document.getElementById("house_number_error").style.marginLeft = "82%";
+        document.getElementById("house_number_error").style.marginLeft = "75%";
 
         document.getElementById("street_error").style.display = "none";
     }
@@ -27,7 +27,7 @@ function errorFields_hide(fieldname)
     if(fieldname === "district")
     {
 
-        document.getElementById("city_error").style.marginLeft = "68%";
+        document.getElementById("city_error").style.marginLeft = "60%";
          
         document.getElementById("district_error").style.display = "none";
     }
@@ -40,7 +40,7 @@ function errorFields_hide(fieldname)
     if(fieldname === "dateofbirth")
     {
 
-        document.getElementById("email_error").style.marginLeft = "70%";
+        document.getElementById("email_error").style.marginLeft = "55%";
         
         document.getElementById("date_error").style.display = "none";
     }
@@ -52,7 +52,7 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "password")
     {
-        document.getElementById("password_confirm_error").style.marginLeft = "72%";
+        document.getElementById("password_confirm_error").style.marginLeft = "62%";
 
         document.getElementById("password_error").style.display = "none";
     }
@@ -68,7 +68,7 @@ function errorFields_show(fieldname)
 {
     if(fieldname === "firstname")
     {
-        document.getElementById("text_error_last_name").style.marginLeft = "18%";
+        document.getElementById("text_error_last_name").style.marginLeft = "10%";
         
         document.getElementById("text_error_name").style.display = "inline-block";
     }
@@ -80,7 +80,7 @@ function errorFields_show(fieldname)
 
     if(fieldname === "street")
     {
-        document.getElementById("house_number_error").style.marginLeft = "35.5%";
+        document.getElementById("house_number_error").style.marginLeft = "25%";
         
         document.getElementById("street_error").style.display = "inline-block";
     }
@@ -117,7 +117,7 @@ function errorFields_show(fieldname)
     if(fieldname === "password") //35%
     {
         
-        document.getElementById("password_confirm_error").style.marginLeft = "35%";
+        document.getElementById("password_confirm_error").style.marginLeft = "20%";
 
         document.getElementById("password_error").style.display = "inline-block";
     }
@@ -137,7 +137,7 @@ function checkFields()
             document.getElementById("firstname").style.borderColor = "#F00";
             check = false
 
-            document.getElementById("text_error_last_name").style.marginLeft = "18%";
+            document.getElementById("text_error_last_name").style.marginLeft = "10%";
 
             document.getElementById("text_error_name").style.display = "inline-block";
         }
@@ -155,7 +155,7 @@ function checkFields()
             document.getElementById("street").style.borderColor = "#F00";
             check = false
 
-            document.getElementById("house_number_error").style.marginLeft = "35.5%";
+            document.getElementById("house_number_error").style.marginLeft = "25%";
 
             document.getElementById("street_error").style.display = "inline-block";
         }
@@ -224,6 +224,7 @@ function checkDate()
     if(document.getElementById("dateofbirth").value >= "2005-01-01" || document.getElementById("dateofbirth").value <= "1910-01-01")
         {
            document.getElementById("dateofbirth").style.borderColor = "#F00";
+            document.getElementById("email_error").style.marginLeft = "20%";
             errorFields_show("dateofbirth");
             return 0;
         }
@@ -265,6 +266,7 @@ function checkPassword()
         {
             document.getElementById("password").style.borderColor = "#F00";
             //document.getElementById("password").textContent = "Senha curta!";
+            document.getElementById("password_confirm_error").style.marginLeft = "20%";
             errorFields_show("password");
             return 0;
         }

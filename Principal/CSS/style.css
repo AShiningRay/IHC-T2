@@ -5,10 +5,10 @@
     font-display: fallback;
 }
 
-h4
+h3
 {
+    margin-top: -2.5%;
     text-align: center;
-    margin: 0 auto;
     font-size: 1.5em;
 }
 
@@ -1230,9 +1230,6 @@ textarea
 
  */
 
-@media screen and (min-width:1700px)
-{
-
     body
     {
         margin: 0 auto;
@@ -1247,7 +1244,7 @@ textarea
 
     form div + div
     {
-        margin-top: 1em;
+        margin-top: 0.8em;
     }
 
     label
@@ -1290,8 +1287,6 @@ textarea
     #firstnamelabel
     {
         display: none;
-        pointer-events: none;
-        margin-left: -14%;
     }
 
     #lastname
@@ -1421,19 +1416,12 @@ textarea
 
     }
 
-    h3
-    {
-        font: 100px Goldman;
-        margin-top: 10%;
-        text-align: center
-    }
-
     #text_error_name
     {
         font: 10px Arial Black;
         color: red;
         display:none;
-        margin-left: 1%;
+        margin-left: 3%;
     }
 
     #text_error_last_name
@@ -1470,7 +1458,6 @@ textarea
 
     #password_error
     {
-        margin-top: 2em;
         font: 10px Arial Black;
         color: red;
         display:none;
@@ -1479,7 +1466,6 @@ textarea
 
     #password_confirm_error
     {
-        margin-top: 2em;
         font: 10px Arial Black;
         color: red;
         display:none;
@@ -1492,16 +1478,14 @@ textarea
 
     #street_error
     {
-        margin-top: 2em;
         font: 10px Arial Black;
         color: red;
         display:none;
-        margin-left: 8%;
+        margin-left: 4%;
     }
 
     #house_number_error
     {
-        margin-top: 2em;
         font: 10px Arial Black;
         color: red;
         display:none;
@@ -1516,8 +1500,7 @@ textarea
     #district_error
     {
         display:none;
-        margin-left: 15%;
-        margin-top: 2em;
+        margin-left: 5%;
         font: 10px Arial Black;
         color: red;
     }
@@ -1526,9 +1509,7 @@ textarea
     {
         display:none;
         margin-left: 68%;
-        margin-top: 2em;
         font: 10px Arial Black;
         color: red;
     }
 
-}

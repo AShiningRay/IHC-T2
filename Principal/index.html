@@ -45,14 +45,15 @@
             
             <form>
                 
-                <h4>CADASTRE-SE</h4>
+                <h3>CADASTRE-SE</h3>
 
                 <h2>DADOS PESSOAIS</h2>
 
                 <div id="name_and_last_name" class="text">
-
-                    <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
-                    <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
+                    <div>
+                        <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
+                        <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
+                    </div>
 
                     <label for="firstname" id="firstnamelabel"></label>
                         <input type="text" id="firstname" placeholder="Nome" onkeyup="checkTextField('firstname')"/>
@@ -62,9 +63,10 @@
                 </div>
 
                 <div id="date_and_email" class="text">
-
-                    <b id="date_error">A data deve ser válida</b>
-                    <b id="email_error">O email deve ser válido</b>
+                    <div>
+                        <b id="date_error">A data deve ser válida</b>
+                        <b id="email_error">O email deve ser válido</b>
+                    </div>
 
                     <label for="dateofbirth" id="dateofbirthlabel"></label>
                          <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Data" onchange="checkDate()">
@@ -75,9 +77,10 @@
                 </div>
 
                 <div id="passwords" class="text">
-
-                    <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
-                    <b id="password_confirm_error">As senhas devem ser iguais</b>
+                    <div>
+                        <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
+                        <b id="password_confirm_error">As senhas devem ser iguais</b>
+                    </div>
 
                     <label for="password" id="passwordlabel"></label>
                         <input type="password" id="password" name="password" placeholder="Senha" onkeyup="checkPassword()">
@@ -89,8 +92,10 @@
                 <h2>ENDEREÇO</h2>
 
                 <div id="street_and_number_error" class="text">
-                    <b id="street_error">O nome da rua deve conter mais de 2 caracteres</b>
-                    <b id="house_number_error">Número inválido</b>
+                    <div>
+                        <b id="street_error">O nome da rua deve conter mais de 2 caracteres</b>
+                        <b id="house_number_error">Número inválido</b>
+                    </div>
 
                     <label for="street" id="streetlabel"></label>
                          <input type="text" id="street" name="street" placeholder="Rua" onkeyup="checkTextField('street')">
@@ -100,8 +105,10 @@
                 </div>
 
                 <div id="distric_and_city" class="text">
-                    <b id="district_error">O nome do bairro deve ser válido</b>
-                    <b id="city_error">O nome da cidade deve ser válido</b>
+                    <div>
+                        <b id="district_error">O nome do bairro deve ser válido</b>
+                        <b id="city_error">O nome da cidade deve ser válido</b>
+                    </div>
 
                     <label for="district" id="districtlabel"></label>
                          <input type="text" id="district" name="district" placeholder="Bairro" onkeyup="checkTextField('district')">
