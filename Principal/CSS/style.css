@@ -5,10 +5,19 @@
     font-display: fallback;
 }
 
+#spacetest
+{
+    padding-bottom: 300%;
+}
+
 form 
 {
+    background: #FFF;
     position: fixed;
-    margin: auto auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 @media screen and (max-width: 600px)
