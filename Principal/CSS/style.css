@@ -77,303 +77,17 @@ textarea
     resize: vertical;
 }
 
-@media screen and (max-width: 600px)
-{
-    
-    body
-    {
-        margin: 0 auto;
-    }
-
-    form 
-    {
-        margin-top: 2%;
-        max-width: 100%;
-        width: 90%;
-        padding: 0.25em;
-    }
-
-    form div + div 
-    {
-        margin-top: 1em;
-    }
-
-    label 
-    {
-        font-size: 0.85em;
-    }
-
-    input
-    {
-        font-size: 0.85em;
-    }
-
-    input:focus
-    {
-        outline:none;
-    }
-
-    textarea 
-    {
-        vertical-align: center;
-        height: 5em;
-        resize: vertical;
-    }
-
-    h1
-    {
-        text-align: center;
-    }
-
-    #firstname
-    {
-        width: 30%;
-    }
-
-    #firstnamelabel
-    {
-        pointer-events: none;
-        margin-left: -14%;
-    }
-
-    #lastname
-    {
-        width: 40%;
-    }
-
-    #lastnamelabel
-    {
-        pointer-events: none;
-        margin-left: -5%
-    }
-
-    #dateofbirth
-    {
-        width: 25%;
-    }
-
-    #dateofbirthlabel
-    {
-        pointer-events: none;
-        margin-left: -1%;
-    }
-
-    #email
-    {
-        width: 40%;
-    }
-
-    #emaillabel
-    {
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
-    #password
-    {
-        width: 26%;
-    }
-
-    #passwordlabel
-    {
-        pointer-events: none;
-        margin-left: -14%;
-    }
-
-    #passwordconfirm
-    {
-        width: 26%;
-    }
-
-    #passwordconfirmlabel
-    {
-        pointer-events: none;
-        margin-left: 13.25%;
-    }
-
-    #street
-    {
-        width: 60%;
-    }
-
-    #streetlabel
-    {
-        pointer-events: none;
-        margin-left: -15.8%;
-    }
-
-    #housenumber
-    {
-
-        width: 18%;
-    }
-
-    #housenumberlabel
-    {
-        pointer-events: none;
-        margin-left: -10.8%;
-    }
-
-    #district
-    {
-        width: 40%;
-    }
-
-    #districtlabel
-    {
-        pointer-events: none;
-        margin-left: -13.8%;
-    }
-
-    #city
-    {
-        width: 38%;
-    }
-
-    #citylabel
-    {
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
-    #submitbutton
-    {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
-        font-family: Goldman, sans-serif;
-    }
-
-    #logo
-    {
-        display: block;
-        margin: 0.5em auto;
-    }
-
-    h1
-    {
-        text-align: center;
-        font: 30px Goldman;
-    }
-
-    h2
-    {
-        font: 30px Goldman;
-
-    }
-
-    h3
-    {
-        font: 100px Goldman;
-        margin-top: 10%;
-        text-align: center
-    }
-
-    #name_and_last_name
-    {
-        font: 10px Arial Black;
-        color: red;
-    }
-
-    #text_error_name
-    {
-        display:none;
-        margin-left: 7%;
-    }
-
-    #text_error_last_name 
-    {
-        display:none;
-        margin-left: 58%;
-    }
-
-    #date_and_email
-    {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
-    }
-
-    #date_error
-    {
-        display:none;
-        margin-left: 25%;
-    }
-
-    #email_error
-    {
-        display:none;
-        margin-left: 70%;
-    }
-
-    #passwords{
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
-
-    }
-
-    #password_error
-    {
-        display:none;
-        margin-left: 6%;
-    }
-
-    #password_confirm_error
-    {
-        display:none;
-        margin-left: 72%;
-    }
-
-    #street_and_number_error
-    {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
-    }
-
-    #street_error
-    {
-        display:none;
-        margin-left: 8%;
-    }
-
-    #house_number_error
-    {
-        display:none;
-        margin-left: 82%;
-    }
-
-    #distric_and_city
-    {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
-    }
-
-    #district_error
-    {
-        display:none;
-        margin-left: 15%;
-    }
-
-    #city_error
-    {
-        display:none;
-        margin-left: 68%;
-    }
-
-}
+/*
 
 @media screen and (min-width: 600px)
 {
-    
+
     body
     {
         margin: 0 auto;
     }
 
-    form 
+    form
     {
         margin-top: 2%;
         max-width: 100%;
@@ -381,12 +95,12 @@ textarea
         padding:  0.5em;
     }
 
-    form div + div 
+    form div + div
     {
         margin-top: 1em;
     }
 
-    label 
+    label
     {
         font-size: 0.9em;
     }
@@ -401,7 +115,7 @@ textarea
         outline:none;
     }
 
-    textarea 
+    textarea
     {
         vertical-align: center;
         height: 5em;
@@ -655,13 +369,13 @@ textarea
 
 @media screen and (min-width: 768px)
 {
-    
+
     body
     {
         margin: 0 auto;
     }
 
-    form 
+    form
     {
         margin-top: 2%;
         max-width: 100%;
@@ -669,12 +383,12 @@ textarea
         padding: 0.75em;
     }
 
-    form div + div 
+    form div + div
     {
         margin-top: 1em;
     }
 
-    label 
+    label
     {
         font-size: 0.9em;
     }
@@ -689,7 +403,7 @@ textarea
         outline:none;
     }
 
-    textarea 
+    textarea
     {
         vertical-align: center;
         height: 5em;
@@ -943,25 +657,25 @@ textarea
 
 @media screen and (min-width:992px)
 {
-    
+
     body
     {
         margin: 0 auto;
     }
 
-    form 
+    form
     {
         max-width: 100%;
         width: 70%;
         padding: 1em;
     }
 
-    form div + div 
+    form div + div
     {
         margin-top: 1em;
     }
 
-    label 
+    label
     {
         font-size: 1em;
     }
@@ -976,7 +690,7 @@ textarea
         outline:none;
     }
 
-    textarea 
+    textarea
     {
         vertical-align: center;
         height: 5em;
@@ -1229,27 +943,27 @@ textarea
 
 @media screen and (min-width:1200px)
 {
-    
+
     body
     {
         margin: 0 auto;
     }
 
-    form 
+    form
     {
         max-width: 100%;
         width: 58%;
         padding: 1.5em;
     }
 
-    form div + div 
+    form div + div
     {
         margin-top: 1em;
     }
 
-    label 
+    label
     {
-        font-size 1em;
+        font-size: 1em;
     }
 
     input
@@ -1262,7 +976,7 @@ textarea
         outline:none;
     }
 
-    textarea 
+    textarea
     {
         vertical-align: center;
         height: 5em;
@@ -1514,22 +1228,24 @@ textarea
 
 }
 
+ */
+
 @media screen and (min-width:1700px)
 {
-    
+
     body
     {
         margin: 0 auto;
     }
 
-    form 
+    form
     {
         max-width: 100%;
         width: 40%;
         padding:  1.75em;
     }
 
-    form div + div 
+    form div + div
     {
         margin-top: 1em;
     }
@@ -1549,7 +1265,7 @@ textarea
         outline:none;
     }
 
-    textarea 
+    textarea
     {
         vertical-align: center;
         height: 5em;
@@ -1561,115 +1277,122 @@ textarea
         text-align: center;
     }
 
+    #name_and_last_name
+    {
+
+    }
+
     #firstname
     {
-        width: 30%;
+        width: 48%;
     }
 
     #firstnamelabel
     {
+        display: none;
         pointer-events: none;
         margin-left: -14%;
     }
 
     #lastname
     {
-        width: 40%;
+        margin-left: 2%;
+        width: 48%;
     }
 
     #lastnamelabel
     {
+        display: none;
         pointer-events: none;
         margin-left: -5%
     }
 
     #dateofbirth
     {
-        width: 25%;
+        width: 40%;
     }
 
     #dateofbirthlabel
     {
+        display: none;
         pointer-events: none;
         margin-left: -1%;
     }
 
     #email
     {
-        width: 40%;
+        margin-left: 2%;
+        width: 55.8%;
     }
 
     #emaillabel
     {
+        display: none;
         pointer-events: none;
         margin-left: -13%;
     }
 
     #password
     {
-        width: 26%;
+        width: 48%;
     }
 
     #passwordlabel
     {
-        pointer-events: none;
-        margin-left: -14%;
+        display: none;
     }
 
     #passwordconfirm
     {
-        width: 26%;
+        width: 48%;
+        margin-left: 2%;
     }
 
     #passwordconfirmlabel
     {
-        pointer-events: none;
-        margin-left: 13.25%;
+        display: none;
     }
 
     #street
     {
-        width: 60%;
+        width: 70%;
     }
 
     #streetlabel
     {
-        pointer-events: none;
-        margin-left: -15.8%;
+        display: none;
     }
 
     #housenumber
     {
-
-        width: 18%;
+        margin-left: 2%;
+        width: 25%;
     }
 
     #housenumberlabel
     {
-        pointer-events: none;
-        margin-left: -10.8%;
+        display: none;
     }
 
     #district
     {
-        width: 40%;
+        width: 50%;
     }
 
     #districtlabel
     {
-        pointer-events: none;
-        margin-left: -13.8%;
+        display: none;
     }
 
     #city
     {
-        width: 38%;
+        margin-left: 2%;
+        width: 45%;
     }
 
     #citylabel
     {
-        pointer-events: none;
-        margin-left: -13%;
+        display: none;
     }
 
     #submitbutton
@@ -1705,98 +1428,107 @@ textarea
         text-align: center
     }
 
-    #name_and_last_name
+    #text_error_name
     {
         font: 10px Arial Black;
         color: red;
-    }
-
-    #text_error_name
-    {
         display:none;
-        margin-left: 7%;
+        margin-left: 1%;
     }
 
     #text_error_last_name
     {
+        font: 10px Arial Black;
+        color: red;
         display:none;
-        margin-left: 58%;
+        margin-left: 50%;
     }
 
     #date_and_email
     {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
     }
 
     #date_error
     {
+        font: 10px Arial Black;
+        color: red;
         display:none;
-        margin-left: 25%;
+        margin-left: 10%;
     }
 
     #email_error
     {
+        font: 10px Arial Black;
+        color: red;
         display:none;
         margin-left: 70%;
     }
 
     #passwords{
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
 
     }
 
     #password_error
     {
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
         display:none;
-        margin-left: 6%;
+        margin-left: 1%;
     }
 
     #password_confirm_error
     {
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
         display:none;
-        margin-left: 72%;
+        margin-left: 60%;
     }
 
     #street_and_number_error
     {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
     }
 
     #street_error
     {
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
         display:none;
         margin-left: 8%;
     }
 
     #house_number_error
     {
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
         display:none;
         margin-left: 82%;
     }
 
     #distric_and_city
     {
-        margin-top: 2em;
-        font: 10px Arial Black;
-        color: red;
+
     }
 
     #district_error
     {
         display:none;
         margin-left: 15%;
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
     }
 
     #city_error
     {
         display:none;
         margin-left: 68%;
+        margin-top: 2em;
+        font: 10px Arial Black;
+        color: red;
     }
 
 }
