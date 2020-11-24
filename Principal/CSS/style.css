@@ -5,6 +5,12 @@
     font-display: fallback;
 }
 
+form 
+{
+    position: fixed;
+    margin: auto auto;
+}
+
 @media screen and (max-width: 600px)
 {
     
@@ -15,7 +21,6 @@
 
     form 
     {
-        margin: 0 auto;
         margin-top: 2%;
         max-width: 100%;
         width: 90%;
@@ -316,7 +321,6 @@
 
     form 
     {
-        margin: 0 auto;
         margin-top: 2%;
         max-width: 100%;
         width: 85%;
@@ -617,7 +621,6 @@
 
     form 
     {
-        margin: 0 auto;
         margin-top: 2%;
         max-width: 100%;
         width: 80%;
@@ -918,7 +921,6 @@
 
     form 
     {
-        margin: 0 auto;
         max-width: 100%;
         width: 70%;
         min-width: 350px;
@@ -1217,7 +1219,6 @@
 
     form 
     {
-        margin: 0 auto;
         max-width: 100%;
         width: 58%;
         min-width: 350px;
@@ -1516,7 +1517,6 @@
 
     form 
     {
-        margin: 0 auto;
         max-width: 100%;
         width: 40%;
         min-width: 350px;
