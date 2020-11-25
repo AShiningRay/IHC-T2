@@ -89,7 +89,7 @@
 form 
 {
     background: #FFF;
-    position: fixed;
+    position: absolute;
     top: 25%;
     left: 0;
     right: 0;
@@ -331,9 +331,9 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
@@ -467,7 +467,7 @@ textarea
     form
     {
         max-width: 100%;
-        width: 85%;
+        width: 88%;
         padding:  1em;
     }
 
@@ -658,9 +658,9 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
@@ -987,9 +987,9 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
@@ -1316,9 +1316,9 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
@@ -1645,12 +1645,12 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
-
+    
     #logo
     {
         display: block;
@@ -1968,11 +1968,12 @@ textarea
     {
         width: 50.4%;
     }
+    
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
@@ -2299,9 +2300,9 @@ textarea
 
     #submitbutton
     {
-        margin-top: 2em;
-        margin-left: 75%;
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 1em;
+        float: right;
         font-family: Goldman, sans-serif;
     }
 
