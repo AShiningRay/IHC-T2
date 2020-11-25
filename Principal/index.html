@@ -91,7 +91,7 @@
                         <div id="passwordconfirmdiv">
                             <label for="passwordconfirm" id="passwordconfirmlabel">Confirmação de senha</label>
                             <b id="password_confirm_error">As senhas devem ser iguais/válidas</b>
-                                <input type="password" id="passwordconfirm" name="passwordconfirm" placeholder="Confirmação de senha"onkeyup="comparePasswords()">
+                                <input type="password" id="passwordconfirm" name="passwordconfirm" placeholder="Confirmação de senha" onkeyup="comparePasswords()">
                         </div>
                     </div>
                 
@@ -134,7 +134,14 @@
                 </div>
                 
                 <button type="button" id="submitbutton" onclick="checkFields()">CADASTRAR</button>
-                
+
+                <div>
+                    <b id="login-external">OU LOGUE-SE COM:</b>
+
+                    <a target = "_blank" href=https://pt-br.facebook.com/login/><img src="Images/logo-facebook.png" id="logo-facebook" alt="logo do facebook" width=50 height=50></a>
+                    <a target = "_blank" href=https://www.google.com/accounts/Login?hl=pt-br><img src="Images/logo-google.png" id="logo-google" alt="logo do google" width=50 height=50></a>
+                    <a target = "_blank" href=https://www.amazon.com.br/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2Fkindle-dbs%2Ffd%2Fnonprime-pr%3FshoppingPortalEnabled%3Dtrue%26ref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=brflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&><img src="Images/logo-amazon.png" id="logo-amazon" alt="logo da amazon" width=50 height=50></a>
+                </div>
             </form>
         </div>
 

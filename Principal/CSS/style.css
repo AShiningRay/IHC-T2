@@ -106,7 +106,6 @@ label
     display: inline-block;
     width: 100%;
     text-align: left;
-    display: inline-block;
     margin-left: 4%;
 }
 
@@ -317,7 +316,7 @@ textarea
     h2
     {
         font: 1.5em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -587,7 +586,7 @@ textarea
     h2
     {
         font: 1.5em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -859,7 +858,7 @@ textarea
     h2
     {
         font: 1.8em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -1131,7 +1130,7 @@ textarea
     h2
     {
         font: 1.8em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -1403,7 +1402,7 @@ textarea
     h2
     {
         font: 1.8em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -1675,7 +1674,7 @@ textarea
     h2
     {
         font: 1.8em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -1947,7 +1946,7 @@ textarea
     h2
     {
         font: 1.8em Goldman;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     #text_error_name
@@ -2050,3 +2049,28 @@ textarea
         margin: 0;
     }
 }
+
+    #login-external
+    {
+        margin-top: 2em;
+        margin-bottom: 0.7em;
+        font-family: Goldman;
+        display: block;
+    }
+
+    #logo-facebook
+    {
+        display: inline-block;
+    }
+
+    #logo-google
+    {
+        margin-left: 1%;
+        display: inline-block;
+    }
+
+    #logo-amazon
+    {
+        margin-left: 1%;
+        display: inline-block;
+    }
