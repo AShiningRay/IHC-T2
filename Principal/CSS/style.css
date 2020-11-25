@@ -783,7 +783,7 @@ textarea
     }
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 800px)
 {
 
     body
@@ -794,7 +794,7 @@ textarea
     form
     {
         max-width: 100%;
-        width: 80%;
+        width: 85%;
         padding:  1.1em;
     }
 
@@ -937,12 +937,12 @@ textarea
     /*CSS Form Block Divs */
     #firstnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
 
     #lastnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
     
     #datediv
@@ -952,17 +952,17 @@ textarea
     
     #emaildiv
     {
-        width:64%;
+        width:63.5%;
     }
     
     #passworddiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #passwordconfirmdiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #streetdiv
@@ -972,7 +972,7 @@ textarea
     
     #housenumberdiv
     {
-        width: 29%;
+        width: 29.4%;
     }
     
     #districtdiv
@@ -982,7 +982,7 @@ textarea
     
     #citydiv
     {
-        width: 49%;
+        width: 50.4%;
     }
 
     #submitbutton
@@ -1266,12 +1266,12 @@ textarea
     /*CSS Form Block Divs */
     #firstnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
 
     #lastnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
     
     #datediv
@@ -1281,17 +1281,17 @@ textarea
     
     #emaildiv
     {
-        width:64%;
+        width:63.5%;
     }
     
     #passworddiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #passwordconfirmdiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #streetdiv
@@ -1301,7 +1301,7 @@ textarea
     
     #housenumberdiv
     {
-        width: 29%;
+        width: 29.4%;
     }
     
     #districtdiv
@@ -1311,7 +1311,7 @@ textarea
     
     #citydiv
     {
-        width: 49%;
+        width: 50.4%;
     }
 
     #submitbutton
@@ -1441,7 +1441,7 @@ textarea
     }
 }
 
-@media screen and (min-width:1200px)
+@media screen and (min-width:1350px)
 {
 
     body
@@ -1595,12 +1595,12 @@ textarea
     /*CSS Form Block Divs */
     #firstnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
 
     #lastnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
     
     #datediv
@@ -1610,17 +1610,17 @@ textarea
     
     #emaildiv
     {
-        width:64%;
+        width:63.5%;
     }
     
     #passworddiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #passwordconfirmdiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #streetdiv
@@ -1630,7 +1630,7 @@ textarea
     
     #housenumberdiv
     {
-        width: 29%;
+        width: 29.4%;
     }
     
     #districtdiv
@@ -1640,7 +1640,7 @@ textarea
     
     #citydiv
     {
-        width: 49%;
+        width: 50.4%;
     }
 
     #submitbutton
@@ -1847,7 +1847,6 @@ textarea
 
     #email
     {
-        margin-left: 2%;
         width: 100%;
     }
 
@@ -1855,7 +1854,6 @@ textarea
     {
         display: none;
         pointer-events: none;
-        margin-left: -13%;
     }
 
     #password
@@ -1871,7 +1869,6 @@ textarea
     #passwordconfirm
     {
         width: 100%;
-        margin-left: 2%;
     }
 
     #passwordconfirmlabel
@@ -1924,12 +1921,12 @@ textarea
     /*CSS Form Block Divs */
     #firstnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
 
     #lastnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
     
     #datediv
@@ -1939,17 +1936,17 @@ textarea
     
     #emaildiv
     {
-        width:64%;
+        width:63.5%;
     }
     
     #passworddiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #passwordconfirmdiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #streetdiv
@@ -1959,7 +1956,7 @@ textarea
     
     #housenumberdiv
     {
-        width: 29%;
+        width: 29.4%;
     }
     
     #districtdiv
@@ -1969,7 +1966,7 @@ textarea
     
     #citydiv
     {
-        width: 49%;
+        width: 50.4%;
     }
 
     #submitbutton
@@ -2253,12 +2250,12 @@ textarea
     /*CSS Form Block Divs */
     #firstnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
 
     #lastnamediv
     {
-        width: 49%;
+        width: 49.7%;
     }
     
     #datediv
@@ -2268,17 +2265,17 @@ textarea
     
     #emaildiv
     {
-        width:64%;
+        width:63.5%;
     }
     
     #passworddiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #passwordconfirmdiv
     {
-        width:49%;
+        width:49.4%;
     }
     
     #streetdiv
@@ -2288,7 +2285,7 @@ textarea
     
     #housenumberdiv
     {
-        width: 29%;
+        width: 29.4%;
     }
     
     #districtdiv
@@ -2298,7 +2295,7 @@ textarea
     
     #citydiv
     {
-        width: 49%;
+        width: 50.4%;
     }
 
     #submitbutton
