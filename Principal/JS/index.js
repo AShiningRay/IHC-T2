@@ -2,7 +2,6 @@ function errorFields_hide(fieldname)
 {
     if(fieldname === "firstname")
     {
-
         document.getElementById("text_error_name").style.display = "none";
     }
 
@@ -102,7 +101,7 @@ function errorFields_show(fieldname)
         document.getElementById("email_error").style.display = "inline-block";
     }
 
-    if(fieldname === "password") //35%
+    if(fieldname === "password")
     {
         document.getElementById("password_error").style.display = "inline-block";
     }
@@ -120,14 +119,14 @@ function checkFields()
     if(document.getElementById("firstname").value.length < 2)
         {
             document.getElementById("firstname").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("text_error_name").style.display = "inline-block";
         }
     
     if(document.getElementById("lastname").value.length < 2)
         {
             document.getElementById("lastname").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("text_error_last_name").style.display = "inline-block";
         }
 
@@ -135,35 +134,35 @@ function checkFields()
     if(document.getElementById("street").value.length < 2)
         {
             document.getElementById("street").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("street_error").style.display = "inline-block";
         }
     
     if(document.getElementById("district").value.length < 2)
         {
             document.getElementById("district").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("district_error").style.display = "inline-block";
         }
     
     if(document.getElementById("city").value.length < 2)
         {
             document.getElementById("city").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("city_error").style.display = "inline-block";
         }
 
     if(document.getElementById("password").value.length < 8)
         {
             document.getElementById("password").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("password_error").style.display = "inline-block";
         }
     
     if(document.getElementById("passwordconfirm").value !== document.getElementById("password").value)
         {
             document.getElementById("passwordconfirm").style.borderColor = "#F00";
-            check = false
+            check = false;
             document.getElementById("password_confirm_error").style.display = "inline-block";
         }
 
@@ -203,7 +202,6 @@ function checkDate()
     if(document.getElementById("dateofbirth").value >= "2005-01-01" || document.getElementById("dateofbirth").value <= "1910-01-01")
         {
            document.getElementById("dateofbirth").style.borderColor = "#F00";
-            document.getElementById("email_error").style.marginLeft = "20%";
             errorFields_show("dateofbirth");
             return 0;
         }
@@ -238,14 +236,11 @@ function checkEmail()
 
 function checkPassword()
 {
-    if (document.getElementById("passwordconfirm").value === "")
-        document.getElementById("passwordconfirm").style.borderColor = "#F00";
-
+    comparePasswords();
+    
     if(document.getElementById("password").value.length < 8)
         {
             document.getElementById("password").style.borderColor = "#F00";
-            //document.getElementById("password").textContent = "Senha curta!";
-            document.getElementById("password_confirm_error").style.marginLeft = "20%";
             errorFields_show("password");
             return 0;
         }
@@ -254,7 +249,7 @@ function checkPassword()
         {
             document.getElementById("password").style.borderColor = "#FF0";
             errorFields_hide("password");
-            return 1;
+            return 0;
         }
     
     else if(document.getElementById("password").value.length >= 14)
@@ -263,15 +258,14 @@ function checkPassword()
             errorFields_hide("password");
             return 1;
         }
-
+    
 }
 
 function comparePasswords()
 {
-    if(document.getElementById("passwordconfirm").value !== document.getElementById("password").value)
+    if(document.getElementById("passwordconfirm").value !== document.getElementById("password").value || document.getElementById("passwordconfirm").value === "")
         {
             document.getElementById("passwordconfirm").style.borderColor = "#F00";
-            //document.getElementById("passwordconfirm").textContent = "senhas não batem!";
             errorFields_show("passwordconfirm");
             return 0;
         }
