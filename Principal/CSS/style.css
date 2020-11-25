@@ -8,8 +8,8 @@
 #registertext
 {
     font-family: Goldman;
-    margin-top: -3%;
-    margin-bottom: -2%;
+    margin-top: 0;
+    margin-bottom: -3.5%;
     text-align: center;
     font-size: 2em;
 }
@@ -94,8 +94,8 @@ form
     left: 0;
     right: 0;
     margin: auto;
-    padding: 1.75em;
-    border: 3px dashed #CCC;
+    padding: 0.15em;
+    border: 3px solid #CCC;
     border-radius: 0.9em;
     box-shadow: 0.0em 0.0em 0.5em 0.05em #000;
 }
@@ -132,6 +132,7 @@ textarea
 
 #clearbutton
 {
+    transition-duration: 1s;
     display: inline-block;
     margin-top: 1em;
     font-size: 1em;
@@ -147,6 +148,7 @@ textarea
 
 #submitbutton
 {
+    transition-duration: 1s;
     display: inline-block;
     margin-top: 1em;
     font-size: 1em;
@@ -157,6 +159,7 @@ textarea
     background-color: #6F6;
     padding: 1em 0;
     box-shadow: 0em 0.1em 0.4em;
+    margin-right: 2.5%;
 }
 
 #firsthalf
@@ -173,7 +176,7 @@ textarea
 
 #secondhalf
 {
-    margin-top: -2%;
+    margin-top: -2.5%;
     width: 100%;
     background-color: #CCF;
     border-radius: 20px;
@@ -181,8 +184,8 @@ textarea
 
 #login-external
 {
-    margin-top: 2.5em;
-    margin-bottom: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     font-family: Goldman, sans-serif;
     display: block;
 }
@@ -216,7 +219,6 @@ textarea
     {
         max-width: 100%;
         width: 90%;
-        padding:  0.75em;
     }
 
     form div + div
@@ -346,13 +348,17 @@ textarea
     {
         width: 100%;
     }
+    
+    #clearbutton
+    {
+        font-size: 0.75em;
+        margin-top: 1.75em;
+    }
 
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 0.75em;
+        margin-top: 1.75em;
     }
 
     #logo
@@ -472,6 +478,7 @@ textarea
         width: 100%;
         margin: 0;
     }
+
 }
 
 @media screen and (min-width: 600px)
@@ -486,7 +493,6 @@ textarea
     {
         max-width: 100%;
         width: 88%;
-        padding:  1em;
     }
 
     form div + div
@@ -617,12 +623,16 @@ textarea
         width: 100%;
     }
 
+    #clearbutton
+    {
+        font-size: 0.80em;
+        margin-top: 1.6em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 0.80em;
+        margin-top: 1.6em;
     }
 
     #logo
@@ -756,7 +766,6 @@ textarea
     {
         max-width: 100%;
         width: 85%;
-        padding:  1.1em;
     }
 
     form div + div
@@ -889,12 +898,16 @@ textarea
         width: 50.4%;
     }
 
+    #clearbutton
+    {
+        font-size: 0.85em;
+        margin-top: 1.5em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 0.85em;
+        margin-top: 1.5em;
     }
 
     #logo
@@ -1028,7 +1041,6 @@ textarea
     {
         max-width: 100%;
         width: 70%;
-        padding:  1.25em;
     }
 
     form div + div
@@ -1161,12 +1173,16 @@ textarea
         width: 50.4%;
     }
 
+    #clearbutton
+    {
+        font-size: 0.9em;
+        margin-top: 1.25em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 0.9em;
+        margin-top: 1.25em;
     }
 
     #logo
@@ -1300,7 +1316,6 @@ textarea
     {
         max-width: 100%;
         width: 50%;
-        padding:  1.5em;
     }
 
     form div + div
@@ -1433,12 +1448,16 @@ textarea
         width: 50.4%;
     }
 
+    #clearbutton
+    {
+        font-size: 0.95em;
+        margin-top: 1.11em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 0.95em;
+        margin-top: 1.1em;
     }
     
     #logo
@@ -1572,7 +1591,6 @@ textarea
     {
         max-width: 100%;
         width: 40%;
-        padding:  1.75em;
     }
 
     form div + div
@@ -1705,12 +1723,16 @@ textarea
         width: 50.4%;
     }
     
+    #clearbutton
+    {
+        font-size: 1em;
+        margin-top: 0.85em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
         font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        margin-top: 0.85em;
     }
 
     #logo
@@ -1843,8 +1865,7 @@ textarea
     form
     {
         max-width: 100%;
-        width: 25%;
-        padding:  1.75em;
+        width: 32%;
     }
 
     form div + div
@@ -1977,12 +1998,16 @@ textarea
         width: 50.4%;
     }
 
+    #clearbutton
+    {
+        font-size: 1.15em;
+        margin-top: 0.5em;
+    }
+
     #submitbutton
     {
-        margin-top: 1em;
-        font-size: 1em;
-        float: right;
-        font-family: Goldman, sans-serif;
+        font-size: 1.15em;
+        margin-top: 0.5em;
     }
 
     #logo
