@@ -130,6 +130,38 @@ textarea
     resize: vertical;
 }
 
+#clearbutton
+{
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1em;
+    float:right;
+    margin-right: 5%;
+    font-family: Goldman, sans-serif;
+    border: 0.3em solid #F44;
+    border-radius: 0.4em;
+    background-color: #F66;
+    padding: 1em 0.6em;
+    box-shadow: 0em 0.1em 0.4em;
+}
+
+#submitbutton
+{
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1em;
+    float: right;
+    font-family: Goldman, sans-serif;
+    border: 0.3em solid #4F4;
+    border-radius: 0.4em;
+    background-color: #6F6;
+    padding: 1em 0;
+    box-shadow: 0em 0.1em 0.4em;
+}
+
+
+
+
 #firsthalf
 {
     width: 100%;
@@ -148,6 +180,31 @@ textarea
     width: 100%;
     background-color:chartreuse;
     border-radius: 20px;
+}
+
+#login-external
+{
+    margin-top: 2.5em;
+    margin-bottom: 0.7em;
+    font-family: Goldman, sans-serif;
+    display: block;
+}
+
+#logo-facebook
+{
+    display: inline-block;
+}
+
+#logo-google
+{
+    margin-left: 1%;
+    display: inline-block;
+}
+
+#logo-amazon
+{
+    margin-left: 1%;
+    display: inline-block;
 }
 
 @media screen and (max-width: 600px)
@@ -2049,28 +2106,3 @@ textarea
         margin: 0;
     }
 }
-
-    #login-external
-    {
-        margin-top: 2em;
-        margin-bottom: 0.7em;
-        font-family: Goldman;
-        display: block;
-    }
-
-    #logo-facebook
-    {
-        display: inline-block;
-    }
-
-    #logo-google
-    {
-        margin-left: 1%;
-        display: inline-block;
-    }
-
-    #logo-amazon
-    {
-        margin-left: 1%;
-        display: inline-block;
-    }

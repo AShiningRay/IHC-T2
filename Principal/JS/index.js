@@ -183,6 +183,11 @@ function checkFields()
 
 }
 
+function clearFields()
+{
+
+}
+
 function checkTextField(fieldname)
 {
     if(document.getElementById(fieldname).value.length < 2)
