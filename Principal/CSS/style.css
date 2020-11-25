@@ -159,13 +159,10 @@ textarea
     box-shadow: 0em 0.1em 0.4em;
 }
 
-
-
-
 #firsthalf
 {
     width: 100%;
-    background-color: aqua;
+    background-color: #ACF;
     border-radius: 20px;
 }
 
@@ -178,7 +175,7 @@ textarea
 {
     margin-top: -2%;
     width: 100%;
-    background-color:chartreuse;
+    background-color: #CCF;
     border-radius: 20px;
 }
 

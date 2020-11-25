@@ -185,7 +185,39 @@ function checkFields()
 
 function clearFields()
 {
-
+    document.getElementById("firstname").value = "";
+    document.getElementById("lastname").value = "";
+    document.getElementById("dateofbirth").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("passwordconfirm").value = "";
+    document.getElementById("street").value = "";
+    document.getElementById("housenumber").value = "";
+    document.getElementById("district").value = "";
+    document.getElementById("city").value = "";
+    
+    document.getElementById("firstname").style.borderColor = "#999";
+    document.getElementById("lastname").style.borderColor = "#999";
+    document.getElementById("dateofbirth").style.borderColor = "#999";
+    document.getElementById("email").style.borderColor = "#999";
+    document.getElementById("password").style.borderColor = "#999";
+    document.getElementById("passwordconfirm").style.borderColor = "#999";
+    document.getElementById("street").style.borderColor = "#999";
+    document.getElementById("housenumber").style.borderColor = "#999";
+    document.getElementById("district").style.borderColor = "#999";
+    document.getElementById("city").style.borderColor = "#999";
+    
+    errorFields_hide("firstname");
+    errorFields_hide("lastname");
+    errorFields_hide("dateofbirth");
+    errorFields_hide("email");
+    errorFields_hide("password");
+    errorFields_hide("passwordconfirm");
+    errorFields_hide("street");
+    errorFields_hide("housenumber");
+    errorFields_hide("district");
+    errorFields_hide("city");
+    
 }
 
 function checkTextField(fieldname)
