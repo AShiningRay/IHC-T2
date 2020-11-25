@@ -45,78 +45,93 @@
             
             <form>
                 
-                <h3>CADASTRE-SE</h3>
-
+                <h3 id="registertext">CADASTRE-SE</h3>
                 <h2>DADOS PESSOAIS</h2>
+                
 
-                <div id="name_and_last_name" class="text">
-                    <div>
-                        <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
-                        <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
-                    </div>
+                <div id="firstnamediv" class="text">
+                    <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
 
                     <label for="firstname" id="firstnamelabel"></label>
                         <input type="text" id="firstname" placeholder="Nome" onkeyup="checkTextField('firstname')"/>
-
+                </div>
+                
+                
+                <div id="lastnamediv">
+                    <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
+                    
                     <label for="lastname" id="lastnamelabel"></label>
                         <input type="text" id="lastname" placeholder="Sobrenome" onkeyup="checkTextField('lastname')"/>
                 </div>
 
-                <div id="date_and_email" class="text">
-                    <div>
-                        <b id="date_error">A data deve ser válida</b>
-                        <b id="email_error">O email deve ser válido</b>
-                    </div>
+                
+                <div id="datediv" class="text">
+                    <b id="date_error">A data deve ser válida</b>
 
                     <label for="dateofbirth" id="dateofbirthlabel"></label>
-                         <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Data" onchange="checkDate()">
-
+                        <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Data" onchange="checkDate()">
+                </div>
+                
+                
+                <div id="emaildiv">
+                    <b id="email_error">O email deve ser válido</b>
+                    
                     <label for="email" id="emaillabel"></label>
-                         <input type="email" id="email" placeholder="E-mail" onkeyup="checkEmail()"/>
-
+                        <input type="email" id="email" placeholder="E-mail" onkeyup="checkEmail()"/>
                 </div>
 
-                <div id="passwords" class="text">
-                    <div>
-                        <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
-                        <b id="password_confirm_error">As senhas devem ser iguais</b>
-                    </div>
+                
+                <div id="passworddiv" class="text">
+                    <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
 
                     <label for="password" id="passwordlabel"></label>
                         <input type="password" id="password" name="password" placeholder="Senha" onkeyup="checkPassword()">
-
+                </div>
+                
+                
+                <div id="passwordconfirmdiv">
+                    <b id="password_confirm_error">As senhas devem ser iguais</b>
+                    
                     <label for="passwordconfirm" id="passwordconfirmlabel"></label>
                         <input type="password" id="passwordconfirm" name="passwordconfirm" placeholder="Confirmação de senha"onkeyup="comparePasswords()">
                 </div>
 
+                
                 <h2>ENDEREÇO</h2>
 
-                <div id="street_and_number_error" class="text">
-                    <div>
-                        <b id="street_error">O nome da rua deve conter mais de 2 caracteres</b>
-                        <b id="house_number_error">Número inválido</b>
-                    </div>
+                
+                <div id="streetdiv" class="text">
+                    <b id="street_error">A rua deve conter mais de 2 caracteres</b>
 
                     <label for="street" id="streetlabel"></label>
                          <input type="text" id="street" name="street" placeholder="Rua" onkeyup="checkTextField('street')">
-
+                </div>
+                
+                
+                <div id="housenumberdiv">
+                    <b id="house_number_error">Número inválido</b>
+                    
                     <label for="housenumber" id="housenumberlabel"></label>
                          <input type="number" id="housenumber" name="housenumber" placeholder="Número" onchange="checkNumber()">
                 </div>
 
-                <div id="distric_and_city" class="text">
-                    <div>
-                        <b id="district_error">O nome do bairro deve ser válido</b>
-                        <b id="city_error">O nome da cidade deve ser válido</b>
-                    </div>
+                
+                <div id="districtdiv" class="text">
+                    <b id="district_error">O nome do bairro deve conter mais de 2 caracteres</b>
 
                     <label for="district" id="districtlabel"></label>
                          <input type="text" id="district" name="district" placeholder="Bairro" onkeyup="checkTextField('district')">
-
+                </div>
+                
+                
+                <div id="citydiv">
+                    <b id="city_error">O nome da cidade deve conter mais de 2 caracteres</b>
+                    
                     <label for="city" id="citylabel"></label>
                          <input type="text" id="city" name="city" placeholder="Cidade" onkeyup="checkTextField('city')">
                 </div>
 
+                
                 <button type="button" id="submitbutton" onclick="checkFields()">CADASTRAR</button>
 
             </form>

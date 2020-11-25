@@ -2,7 +2,6 @@ function errorFields_hide(fieldname)
 {
     if(fieldname === "firstname")
     {
-        document.getElementById("text_error_last_name").style.marginLeft = "53%";
 
         document.getElementById("text_error_name").style.display = "none";
     }
@@ -14,7 +13,6 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "street")
     {
-        document.getElementById("house_number_error").style.marginLeft = "75%";
 
         document.getElementById("street_error").style.display = "none";
     }
@@ -26,9 +24,6 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "district")
     {
-
-        document.getElementById("city_error").style.marginLeft = "60%";
-         
         document.getElementById("district_error").style.display = "none";
     }
  
@@ -39,8 +34,6 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "dateofbirth")
     {
-
-        document.getElementById("email_error").style.marginLeft = "55%";
         
         document.getElementById("date_error").style.display = "none";
     }
@@ -52,7 +45,6 @@ function errorFields_hide(fieldname)
 
     if(fieldname === "password")
     {
-        document.getElementById("password_confirm_error").style.marginLeft = "62%";
 
         document.getElementById("password_error").style.display = "none";
     }
@@ -68,7 +60,6 @@ function errorFields_show(fieldname)
 {
     if(fieldname === "firstname")
     {
-        document.getElementById("text_error_last_name").style.marginLeft = "10%";
         
         document.getElementById("text_error_name").style.display = "inline-block";
     }
@@ -80,7 +71,6 @@ function errorFields_show(fieldname)
 
     if(fieldname === "street")
     {
-        document.getElementById("house_number_error").style.marginLeft = "25%";
         
         document.getElementById("street_error").style.display = "inline-block";
     }
@@ -92,7 +82,6 @@ function errorFields_show(fieldname)
 
     if(fieldname === "district")
     {
-        document.getElementById("city_error").style.marginLeft = "22%";
         
         document.getElementById("district_error").style.display = "inline-block";
     }
@@ -104,7 +93,6 @@ function errorFields_show(fieldname)
 
     if(fieldname === "dateofbirth")
     {
-        document.getElementById("email_error").style.marginLeft = "20%";
         
         document.getElementById("date_error").style.display = "inline-block";
     }
@@ -116,9 +104,6 @@ function errorFields_show(fieldname)
 
     if(fieldname === "password") //35%
     {
-        
-        document.getElementById("password_confirm_error").style.marginLeft = "20%";
-
         document.getElementById("password_error").style.display = "inline-block";
     }
 
@@ -136,9 +121,6 @@ function checkFields()
         {
             document.getElementById("firstname").style.borderColor = "#F00";
             check = false
-
-            document.getElementById("text_error_last_name").style.marginLeft = "10%";
-
             document.getElementById("text_error_name").style.display = "inline-block";
         }
     
@@ -154,9 +136,6 @@ function checkFields()
         {
             document.getElementById("street").style.borderColor = "#F00";
             check = false
-
-            document.getElementById("house_number_error").style.marginLeft = "25%";
-
             document.getElementById("street_error").style.display = "inline-block";
         }
     
@@ -164,9 +143,6 @@ function checkFields()
         {
             document.getElementById("district").style.borderColor = "#F00";
             check = false
-
-            document.getElementById("city_error").style.marginLeft = "22%";
-
             document.getElementById("district_error").style.display = "inline-block";
         }
     
@@ -174,19 +150,22 @@ function checkFields()
         {
             document.getElementById("city").style.borderColor = "#F00";
             check = false
-
             document.getElementById("city_error").style.display = "inline-block";
         }
 
     if(document.getElementById("password").value.length < 8)
-    {
-        document.getElementById("password").style.borderColor = "#F00";
-        check = false
-
-        document.getElementById("password_confirm_error").style.marginLeft = "35%";
-
-        document.getElementById("password_error").style.display = "inline-block";
-    }
+        {
+            document.getElementById("password").style.borderColor = "#F00";
+            check = false
+            document.getElementById("password_error").style.display = "inline-block";
+        }
+    
+    if(document.getElementById("passwordconfirm").value !== document.getElementById("password").value)
+        {
+            document.getElementById("passwordconfirm").style.borderColor = "#F00";
+            check = false
+            document.getElementById("password_confirm_error").style.display = "inline-block";
+        }
 
     if (comparePasswords() === 0)
         check = false
