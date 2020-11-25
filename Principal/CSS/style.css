@@ -102,10 +102,12 @@ form
 
 label 
 {
-    font: 0.9em sans-serif;
+    font: 1em sans-serif;
     display: inline-block;
-    width: 22%;
-    text-align: right;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 4%;
 }
 
 input
@@ -127,6 +129,26 @@ textarea
 {
     vertical-align: center;
     resize: vertical;
+}
+
+#firsthalf
+{
+    width: 100%;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+#firsthalfcontent, #secondhalfcontent
+{
+    transform: scale(0.95);
+}
+
+#secondhalf
+{
+    margin-top: -2%;
+    width: 100%;
+    background-color:chartreuse;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 600px)
@@ -176,20 +198,9 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
-    }
-
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
     }
 
     #dateofbirth
@@ -197,23 +208,9 @@ textarea
         width: 100%;
     }
 
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
-    }
-
     #email
     {
         width: 100%;
-    }
-
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
     }
 
     #password
@@ -221,19 +218,9 @@ textarea
         width: 100%;
     }
 
-    #passwordlabel
-    {
-        display: none;
-    }
-
     #passwordconfirm
     {
         width: 100%;
-    }
-
-    #passwordconfirmlabel
-    {
-        display: none;
     }
 
     #street
@@ -241,19 +228,8 @@ textarea
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
-        width: 100%;
-    }
-    
-    #housenumberlabel
-    {
-        display: none;
         width: 100%;
     }
 
@@ -262,20 +238,9 @@ textarea
         width: 100%;
     }
 
-    #districtlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -478,7 +443,7 @@ textarea
 
     label
     {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
 
     input
@@ -503,20 +468,9 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
-    }
-
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
     }
 
     #dateofbirth
@@ -524,23 +478,9 @@ textarea
         width: 100%;
     }
 
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
-    }
-
     #email
     {
         width: 100%;
-    }
-
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
     }
 
     #password
@@ -548,19 +488,9 @@ textarea
         width: 100%;
     }
 
-    #passwordlabel
-    {
-        display: none;
-    }
-
     #passwordconfirm
     {
         width: 100%;
-    }
-
-    #passwordconfirmlabel
-    {
-        display: none;
     }
 
     #street
@@ -568,41 +498,19 @@ textarea
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
         width: 100%;
     }
     
-    #housenumberlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #district
     {
-        width: 100%;
-    }
-
-    #districtlabel
-    {
-        display: none;
         width: 100%;
     }
 
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -830,32 +738,14 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
     }
 
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
-    }
-
     #dateofbirth
     {
         width: 100%;
-    }
-
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
     }
 
     #email
@@ -864,21 +754,9 @@ textarea
         width: 100%;
     }
 
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
     #password
     {
         width: 100%;
-    }
-
-    #passwordlabel
-    {
-        display: none;
     }
 
     #passwordconfirm
@@ -887,19 +765,9 @@ textarea
         margin-left: 2%;
     }
 
-    #passwordconfirmlabel
-    {
-        display: none;
-    }
-
     #street
     {
         width: 100%;
-    }
-
-    #streetlabel
-    {
-        display: none;
     }
 
     #housenumber
@@ -907,31 +775,14 @@ textarea
         width: 100%;
     }
     
-    #housenumberlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #district
     {
-        width: 100%;
-    }
-
-    #districtlabel
-    {
-        display: none;
         width: 100%;
     }
 
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -1134,7 +985,7 @@ textarea
 
     label
     {
-        font-size: 1em;
+        font-size: 1.05em;
     }
 
     input
@@ -1159,32 +1010,14 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
     }
 
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
-    }
-
     #dateofbirth
     {
         width: 100%;
-    }
-
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
     }
 
     #email
@@ -1193,21 +1026,9 @@ textarea
         width: 100%;
     }
 
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
     #password
     {
         width: 100%;
-    }
-
-    #passwordlabel
-    {
-        display: none;
     }
 
     #passwordconfirm
@@ -1216,29 +1037,13 @@ textarea
         margin-left: 2%;
     }
 
-    #passwordconfirmlabel
-    {
-        display: none;
-    }
-
     #street
     {
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
-        width: 100%;
-    }
-    
-    #housenumberlabel
-    {
-        display: none;
         width: 100%;
     }
 
@@ -1247,20 +1052,9 @@ textarea
         width: 100%;
     }
 
-    #districtlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -1463,7 +1257,7 @@ textarea
 
     label
     {
-        font-size: 1em;
+        font-size: 1.15em;
     }
 
     input
@@ -1488,32 +1282,14 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
     }
 
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
-    }
-
     #dateofbirth
     {
         width: 100%;
-    }
-
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
     }
 
     #email
@@ -1522,21 +1298,9 @@ textarea
         width: 100%;
     }
 
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
     #password
     {
         width: 100%;
-    }
-
-    #passwordlabel
-    {
-        display: none;
     }
 
     #passwordconfirm
@@ -1545,29 +1309,13 @@ textarea
         margin-left: 2%;
     }
 
-    #passwordconfirmlabel
-    {
-        display: none;
-    }
-
     #street
     {
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
-        width: 100%;
-    }
-    
-    #housenumberlabel
-    {
-        display: none;
         width: 100%;
     }
 
@@ -1576,20 +1324,9 @@ textarea
         width: 100%;
     }
 
-    #districtlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -1792,7 +1529,8 @@ textarea
 
     label
     {
-        font-size: 1em;
+        font-size: 1.25em;
+        display: inline-block;
     }
 
     input
@@ -1817,20 +1555,9 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
-    }
-
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
     }
 
     #dateofbirth
@@ -1838,22 +1565,9 @@ textarea
         width: 100%;
     }
 
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
-    }
-
     #email
     {
         width: 100%;
-    }
-
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
     }
 
     #password
@@ -1861,19 +1575,10 @@ textarea
         width: 100%;
     }
 
-    #passwordlabel
-    {
-        display: none;
-    }
 
     #passwordconfirm
     {
         width: 100%;
-    }
-
-    #passwordconfirmlabel
-    {
-        display: none;
     }
 
     #street
@@ -1881,19 +1586,8 @@ textarea
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
-        width: 100%;
-    }
-    
-    #housenumberlabel
-    {
-        display: none;
         width: 100%;
     }
 
@@ -1902,20 +1596,9 @@ textarea
         width: 100%;
     }
 
-    #districtlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
@@ -2143,32 +1826,14 @@ textarea
         width: 100%;
     }
 
-    #firstnamelabel
-    {
-        display: none;
-    }
-
     #lastname
     {
         width: 100%;
     }
 
-    #lastnamelabel
-    {
-        display: none;
-        pointer-events: none;
-    }
-
     #dateofbirth
     {
         width: 100%;
-    }
-
-    #dateofbirthlabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -1%;
     }
 
     #email
@@ -2177,21 +1842,9 @@ textarea
         width: 100%;
     }
 
-    #emaillabel
-    {
-        display: none;
-        pointer-events: none;
-        margin-left: -13%;
-    }
-
     #password
     {
         width: 100%;
-    }
-
-    #passwordlabel
-    {
-        display: none;
     }
 
     #passwordconfirm
@@ -2200,29 +1853,13 @@ textarea
         margin-left: 2%;
     }
 
-    #passwordconfirmlabel
-    {
-        display: none;
-    }
-
     #street
     {
         width: 100%;
     }
 
-    #streetlabel
-    {
-        display: none;
-    }
-
     #housenumber
     {
-        width: 100%;
-    }
-    
-    #housenumberlabel
-    {
-        display: none;
         width: 100%;
     }
 
@@ -2231,20 +1868,9 @@ textarea
         width: 100%;
     }
 
-    #districtlabel
-    {
-        display: none;
-        width: 100%;
-    }
-
     #city
     {
         width: 100%;
-    }
-
-    #citylabel
-    {
-        display: none;
     }
 
     /*CSS Form Block Divs */
