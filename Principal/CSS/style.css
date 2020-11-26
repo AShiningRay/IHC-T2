@@ -1,4 +1,14 @@
-@font-face 
+
+#background{
+    margin-top: 0;
+    background-image: url('../Images/background.jpg');
+    width: 1920px;
+    height: 1080px;
+    display: inline-block;
+}
+
+
+@font-face
 {
     font-family: Goldman;
     src: url('../Fonts/Goldman-Bold.ttf');
@@ -65,11 +75,6 @@
 }
 
 
-#placeholderwebsite
-{
-    filter: blur(0px);
-}
-
 #backgrounddarkener
 {
     transition-duration: 0.5s;
@@ -79,11 +84,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-}
-
-#spacetest
-{
-    padding-bottom: 300%;
 }
 
 form 
@@ -193,6 +193,7 @@ textarea
 #logo-facebook
 {
     display: inline-block;
+    margin-top: 1%;
 }
 
 #logo-google
