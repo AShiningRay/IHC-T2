@@ -1,9 +1,6 @@
 
-#background{
+#logo{
     margin-top: 0;
-    background-image: url('../Images/background.jpg');
-    width: 1920px;
-    height: 1080px;
     display: inline-block;
 }
 
@@ -13,6 +10,13 @@
     font-family: Goldman;
     src: url('../Fonts/Goldman-Bold.ttf');
     font-display: fallback;
+}
+
+body
+{
+    margin: 0 auto;
+    background-image: url('../Images/background.jpg');
+    background-size: 100%;
 }
 
 #registertext
