@@ -33,28 +33,28 @@
             <div id="websitecontent">
             
                 <div id="onsale">
-                    <img src="Images/Foods/Hamburguer7.png">
+                    <img src="Images/Foods/Hamburguer7.png" alt="Hamburguer7">
                 </div>
                 
                 <div id="specialties">
-                    <img src="Images/Foods/Hamburguer10.png">
-                    <img src="Images/Foods/Hamburguer6.png">
-                    <img src="Images/Foods/Hamburguer4.png">
+                    <img src="Images/Foods/Hamburguer10.png" alt="Hamburguer10">
+                    <img src="Images/Foods/Hamburguer6.png" alt="Hamburguer6">
+                    <img src="Images/Foods/Hamburguer4.png" alt="Hamburguer4">
                 </div>
             
                 <div id="combos">
-                    <img src="Images/Foods/Hamburguer3.png">
+                    <img src="Images/Foods/Hamburguer3.png" alt="Hamburguer3">
                 </div>
 
                 <div id="new">
-                    <img src="Images/Foods/Hamburguer9.png">
+                    <img src="Images/Foods/Hamburguer9.png" alt="Hamburguer9">
                 </div>
 
                 <div id="mostpopular">
-                    <img src="Images/Foods/Hamburguer3.png">
-                    <img src="Images/Foods/Hamburguer10.png">
-                    <img src="Images/Foods/Hamburguer4.png">
-                    <img src="Images/Foods/Hamburguer7.png">
+                    <img src="Images/Foods/Hamburguer3.png" alt="Hamburguer3">
+                    <img src="Images/Foods/Hamburguer10.png" alt="Hamburguer10">
+                    <img src="Images/Foods/Hamburguer4.png" alt="Hamburguer4">
+                    <img src="Images/Foods/Hamburguer7.png" alt="Hamburguer7">
                 </div>
                 
             </div>
@@ -80,42 +80,42 @@
                         <div id="firstnamediv" class="text">
                             <label for="firstname" id="firstnamelabel">Nome</label>
                             <b id="text_error_name"> O nome deve conter 2 ou mais caracteres</b>
-                                <input type="text" id="firstname" placeholder="Nome" onkeyup="checkTextField('firstname')"/>
+                                <input type="text" id="firstname" onkeyup="checkTextField('firstname')"/>
                         </div>
 
 
                         <div id="lastnamediv">
                             <label for="lastname" id="lastnamelabel">Sobrenome</label>
                             <b id="text_error_last_name"> O sobrenome deve conter 2 ou mais caracteres</b>
-                                <input type="text" id="lastname" placeholder="Sobrenome" onkeyup="checkTextField('lastname')"/>
+                                <input type="text" id="lastname" onkeyup="checkTextField('lastname')"/>
                         </div>
 
 
                         <div id="datediv" class="text">
                             <label for="dateofbirth" id="dateofbirthlabel">Data de Nascimento</label>
                             <b id="date_error">A data deve ser válida</b>
-                                <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Data" onchange="checkDate()">
+                                <input type="date" name="dateofbirth" id="dateofbirth" onchange="checkDate()">
                         </div>
 
 
                         <div id="emaildiv">
                             <label for="email" id="emaillabel">E-Mail</label>
                             <b id="email_error">O E-Mail deve ser válido</b>
-                                <input type="email" id="email" placeholder="E-mail" onkeyup="checkEmail()"/>
+                                <input type="email" id="email" onkeyup="checkEmail()"/>
                         </div>
 
 
                         <div id="passworddiv" class="text">
                             <label for="password" id="passwordlabel">Senha</label>
                             <b id="password_error">A senha deve conter 8 ou mais caracteres</b>
-                                <input type="password" id="password" name="password" placeholder="Senha" onkeyup="checkPassword()">
+                                <input type="password" id="password" name="password" onkeyup="checkPassword()">
                         </div>
 
 
                         <div id="passwordconfirmdiv">
                             <label for="passwordconfirm" id="passwordconfirmlabel">Confirmação de senha</label>
                             <b id="password_confirm_error">As senhas devem ser iguais/válidas</b>
-                                <input type="password" id="passwordconfirm" name="passwordconfirm" placeholder="Confirmação de senha" onkeyup="comparePasswords()">
+                                <input type="password" id="passwordconfirm" name="passwordconfirm" onkeyup="comparePasswords()">
                         </div>
                     </div>
                 
@@ -131,28 +131,28 @@
                         <div id="streetdiv" class="text">
                             <label for="street" id="streetlabel">Rua</label>
                             <b id="street_error">A rua deve conter mais de 2 caracteres</b>
-                                 <input type="text" id="street" name="street" placeholder="Rua" onkeyup="checkTextField('street')">
+                                 <input type="text" id="street" name="street" onkeyup="checkTextField('street')">
                         </div>
 
 
                         <div id="housenumberdiv">
                             <label for="housenumber" id="housenumberlabel">Número da residência</label>
                             <b id="house_number_error">Número inválido</b>
-                                 <input type="number" id="housenumber" name="housenumber" placeholder="Número" onchange="checkNumber()">
+                                 <input type="number" id="housenumber" name="housenumber" onchange="checkNumber()">
                         </div>
 
 
                         <div id="districtdiv" class="text">
                             <label for="district" id="districtlabel">Bairro</label>
                             <b id="district_error">O nome do bairro deve conter mais de 2 caracteres</b>
-                                 <input type="text" id="district" name="district" placeholder="Bairro" onkeyup="checkTextField('district')">
+                                 <input type="text" id="district" name="district" onkeyup="checkTextField('district')">
                         </div>
 
 
                         <div id="citydiv">
                             <label for="city" id="citylabel">Cidade</label>
                             <b id="city_error">O nome da cidade deve conter mais de 2 caracteres</b>
-                                 <input type="text" id="city" name="city" placeholder="Cidade" onkeyup="checkTextField('city')">
+                                 <input type="text" id="city" name="city" onkeyup="checkTextField('city')">
                         </div>
                     </div>
                 </div>
