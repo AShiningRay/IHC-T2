@@ -5,78 +5,6 @@
     font-display: fallback;
 }
 
-#onsale
-{
-    display: inline-block;
-    width: 40%;
-    border: 0.5em solid #444;
-    border-radius: 30px;
-}
-
-#onsale img
-{
-    height: 12em;
-    margin: 0 2%;
-}
-
-#specialties
-{
-    display: inline-block;
-    width: 40%;
-    border: 0.5em solid #444;
-    border-radius: 30px;
-}
-
-#specialties img
-{
-    height: 12em;
-    margin: 0 2%;
-}
-
-#combos
-{
-    margin-top: 2%;
-    display: inline-block;
-    width: 40%;
-    border: 0.5em solid #444;
-    border-radius: 30px;
-}
-
-#combos img
-{
-    height: 12em;
-    margin: 0 2%;
-}
-
-#new
-{
-    display: inline-block;
-    width: 40%;
-    border: 0.5em solid #444;
-    border-radius: 30px;
-}
-
-#new img
-{
-    height: 12em;
-    margin: 0 2%;
-}
-
-#mostpopular
-{
-    margin-top: 2%;
-    display: inline-block;
-    width: 99%;
-    border: 0.5em solid #444;
-    border-radius: 30px;
-}
-
-#mostpopular img
-{
-    height: 12em;
-    margin: 0 2%;
-}
-
 #registertext
 {
     font-family: 'Goldman', sans-serif;
@@ -162,7 +90,7 @@ form
 {
     background: #FFF;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 0;
     right: 0;
     margin: auto;
